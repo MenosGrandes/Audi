@@ -1,0 +1,20 @@
+{
+    "org.apache.cordova.dialogs": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.dialogs"
+        }
+    },
+    "org.apache.cordova.vibration": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.vibration"
+        }
+    },
+    "org.apache.cordova.network-information": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.network-information"
+        }
+    }
+}
