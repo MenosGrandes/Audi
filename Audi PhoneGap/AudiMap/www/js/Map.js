@@ -23,22 +23,14 @@ var Map = {
 		Map.waypointsArray.push(marker);
 	},
 	/**/
-	addWaypoint : function(latLong, _icon) {/*
-											 * var infowindow = new
-											 * google.maps.InfoWindow({ content:
-											 * hour + ":" + min + ":" + seconds
-											 * });
-											 */
+	addWaypoint : function(latLong, _icon) {
+
 		var marker = new google.maps.Marker({
 			position : latLong,
 			map : Map.googleMap,
 			title : "New Marker",
 			icon : _icon
 		});
-		/*
-		 * google.maps.event.addListener(marker, 'click', function() {
-		 * infowindow.open(Map.googleMap,marker); });
-		 */
 		Map.waypointsArray.push(marker);
 	},
 
@@ -56,21 +48,17 @@ var Map = {
 
 		Map.googleMap = new google.maps.Map(document.getElementById("map"),
 				mapOptions);
-		Map.addWaypoint(latLong, 'img/startNode.png');
-
+		// Map.addWaypoint(latLong, 'img/startNode.png');
+		Map.waypointsArray.push(position);
 	},
 	/**/
 	onSuccessRefresh : function(position) {
-		var date = new Date();
-		var hour = date.getHours();
-		var min = date.getMinutes();
-		var seconds = date.getSeconds();
-
 		var longitude = position.coords.longitude;
 		var latitude = position.coords.latitude;
 		var latLong = new google.maps.LatLng(latitude, longitude);
-		Map.addWaypoint(latLong);
-
+		// Map.addWaypoint(latLong);
+		Map.waypointsArray.push(position);
+		
 	}
 
 }

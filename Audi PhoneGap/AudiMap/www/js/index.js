@@ -20,17 +20,15 @@ var app = {
 		// app.receivedEvent('deviceready');
 
 		/* Check Internet connection */
-		//InternetErrorHandler.checkInternetConnection();
+		// InternetErrorHandler.checkInternetConnection();
 		/**/
-		//GPSErrorHandler.checkGPSConnection();
+		// GPSErrorHandler.checkGPSConnection();
 
 		navigator.geolocation.getCurrentPosition(Map.onSuccessLoad,
 				GPSErrorHandler.checkGPSConnection);
-		var options = {
-			timeout : 3000
-		};
+				
 		app.watchID = navigator.geolocation.watchPosition(Map.onSuccessRefresh,
-				GPSErrorHandler.checkGPSConnection, options);
+				GPSErrorHandler.checkGPSConnection,        { frequency: 3000, enableHighAccuracy: true }););
 	},
 
 };

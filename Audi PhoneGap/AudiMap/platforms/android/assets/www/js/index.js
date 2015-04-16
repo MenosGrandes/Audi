@@ -27,10 +27,10 @@ var app = {
 		navigator.geolocation.getCurrentPosition(Map.onSuccessLoad,
 				GPSErrorHandler.checkGPSConnection);
 		var options = {
-			timeout : 3000
+			timeout : 150000
 		};
 		app.watchID = navigator.geolocation.watchPosition(Map.onSuccessRefresh,
-				GPSErrorHandler.checkGPSConnection, options);
+				GPSErrorHandler.checkGPSConnection);
 	},
 
 };

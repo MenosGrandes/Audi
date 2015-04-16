@@ -50,7 +50,7 @@ var Map = {
 
 		var mapOptions = {
 			center : latLong,
-			zoom : 15,
+			zoom : 25,
 			mapTypeId : google.maps.MapTypeId.ROADMAP
 		};
 
@@ -69,7 +69,7 @@ var Map = {
 		var longitude = position.coords.longitude;
 		var latitude = position.coords.latitude;
 		var latLong = new google.maps.LatLng(latitude, longitude);
-		Map.addWaypoint(latLong);
+		Map.addWaypoint(latLong,'img/bean.png');
 
 	}
 
