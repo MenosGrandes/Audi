@@ -31,7 +31,8 @@ var watch_id = null;    // ID of the geolocation
 var tracking_data = []; // Array containing GPS position objects
 
 $("#startTracking_start").live('click', function(){
-    
+  
+  
 	// Start tracking the User
     watch_id = navigator.geolocation.watchPosition(
     
@@ -104,14 +105,27 @@ $('#history').live('pageshow', function () {
 	$("#history_tracklist").listview('refresh');
 
 });
-
+//~~~~~~~~~~~~~~~~~!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // When the user clicks a link to view track info, set/change the track_id attribute on the track_info page.
+
+//JEZELI TO USUNIESZ TO SIE SYPE!!!
+//!
+//!
+//!
+//!
+//!!!
+//!
+//!
+//!
+//!
+//!
+//!
 $("#history_tracklist li a").live('click', function(){
 
 	$("#track_info").attr("track_id", $(this).text());
 	
 });
-
+//~~~~~~~~~~~~~~~~~!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 // When the user views the Track Info page
 $('#track_info').live('pageshow', function(){

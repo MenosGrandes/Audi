@@ -4,17 +4,16 @@
 	<title>ExerciseTracker</title>
 	
 <link rel="stylesheet"	href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-<link rel="stylesheet"	src="css/custom.css">
 <script type="text/javascript" src="js/json2.js"></script>
 
 <script type="text/javascript" src="cordova.js"></script>
 <script	src="http://jsconsole.com/remote.js?96F85286-1150-4A8C-A506-8555FDECF2FB"></script>
 
-	<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.7.2.js"></script>
 <script	src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgmpA8pJvidVfdaZEXXVWKP8kSIKPO7UM"></script>
-	    <script type="text/javascript" src="exercisetracker.js"></script>
+	    <script type="text/javascript" src="js/exercisetracker.js"></script>
 	
 </head>
 <body>
@@ -30,13 +29,40 @@
 				<li><a href="#home" data-transition="none" data-icon="home">Home</a></li>
 				<li><a href="#startTracking" data-transition="none" data-icon="plus">Track Workout</a></li>
 				<li><a href="#history" data-transition="none" data-icon="star">History</a></li>
+				<li><a href="#options" data-transition="none" data-icon="gear">Options</a></li>
 			</ul>
 		</div>
 	</div>
 
 	<div data-role="content">
-		<p>Welcome to the <em>ExerciseTracker</em> app. By clicking <em>Track Workout</em> you can record your workouts using the GPS feature on your phone. Learn how to build this app by reading <em>mobile.tutsplus.com</em>.</p>
+
 	
+
+	</div>
+
+
+</div>
+<!-- End of Home page -->
+
+
+<div data-role="page" id="options">
+
+	<div data-role="header">
+	
+		<h1>Home</h1>
+	
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" data-transition="none" data-icon="home">Home</a></li>
+				<li><a href="#startTracking" data-transition="none" data-icon="plus">Track Workout</a></li>
+				<li><a href="#history" data-transition="none" data-icon="star">History</a></li>
+				<li><a href="#options" data-transition="none" data-icon="gear">Options</a></li>
+				
+			</ul>
+		</div>
+	</div>
+
+	<div data-role="content">
 		<button id="home_network_button" data-icon="check">Internet Access Enabled</button>
 		<button id="home_clearstorage_button">Clear local storage</button>
 		<button id="home_seedgps_button">Load Seed GPS Data</button>
@@ -44,7 +70,7 @@
 
 
 </div>
-<!-- End of Home page -->
+
 
 <!-- Start of Trackwork Out page -->
 <div data-role="page" id="startTracking">
@@ -57,16 +83,14 @@
 				<li><a href="#home" data-transition="none" data-icon="home">Home</a></li>
 				<li><a href="#startTracking" data-transition="none" data-icon="plus">Track Workout</a></li>
 				<li><a href="#history" data-transition="none" data-icon="star">History</a></li>
+				<li><a href="#options" data-transition="none" data-icon="gear">Options</a></li>
 			</ul>
 		</div>
 	</div>
 
 	<div data-role="content">	
 		<p id="startTracking_status"></p>
-			<div data-role="fieldcontain" class="ui-hide-label">
-				<label for="track_id">Track ID/Name:</label>
-				<input type="text" name="track_id" id="track_id" placeholder="Workout ID/Name"/>
-			</div>
+
 
 		<button data-role="button" id="startTracking_start">Start Tracking</button>
 		<button data-role="button" id="startTracking_stop">Stop Tracking</button>  
@@ -90,6 +114,7 @@
                 <li><a href="#home" data-transition="none" data-icon="home">Home</a></li>
                 <li><a href="#startTracking" data-transition="none" data-icon="plus">Track Workout</a></li>
                 <li><a href="#history" data-transition="none" data-icon="star">History</a></li>
+                <li><a href="#options" data-transition="none" data-icon="gear">Options</a></li>
             </ul>
         </div>
     </div>
@@ -116,6 +141,7 @@
 				<li><a href="#home" data-transition="none" data-icon="home">Home</a></li>
 				<li><a href="#startTracking" data-transition="none" data-icon="plus">Track Workout</a></li>
 				<li><a href="#history" data-transition="none" data-icon="star">History</a></li>
+				<li><a href="#options" data-transition="none" data-icon="gear">Options</a></li>
 			</ul>
 		</div>
 	</div>
