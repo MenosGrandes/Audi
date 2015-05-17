@@ -59,15 +59,84 @@ function addZero(i) {
   return i;
 }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-function updateStatusOfWorkout(data)
+//funkcja losujaca pytania i wyswietlajaca je
+function getQuestion()
 {
-  
+  var x = Math.floor((Math.random() * 15) + 1);
+  $.getJSON("json/quizNew.json", function(json) {
+    var question=json[x.toString()];
+    $( "#questionQ" ).html(question.pytanie);
+    $( "#A" ).html(question.a);
+    $( "#B" ).html(question.b);
+    $( "#C" ).html(question.c);
+    //listenery do przyciskow A
+    $("#A").on("click",function(){
+      if(question.odp=="a")
+        {
+        points++;
+        console.log("dobrze");
+        }
+      else
+        {
+        }
+      $("#points").html("Points : <strong>" + points);
+      $('#questionPopoupDialog').popup('close');
 
+    });
+    //listenery do przyciskow B
+    $("#B").on("click",function(){
+      if(question.odp=="b")
+      {
+        points++;
+        console.log("dobrze");
+      }
+    else
+      {
+      
+      }
+      $("#points").html("Points : <strong>" + points);
+      $('#questionPopoupDialog').popup('close');
+
+    });
+    //listenery do przyciskow C
+    $("#C").on("click",function(){
+      if(question.odp=="c")
+      {
+        points++;
+        console.log("dobrze");
+      }
+    else
+      {
+      }
+      $("#points").html("Points : <strong>" + points);
+      $('#questionPopoupDialog').popup('close');
+    });
+    
+    
+//    usuwanie listenerow do przyciskow
+
+    
+   
+});
+ 
+  
 }
+
+function question()
+{
+//navigator.notification.vibrate(100);
+getQuestion();
+$('#questionPopoupDialog').popup('open',{positionTo:'#home'});
+}
+
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 //Start szukanie pozycji GPS, start gry.
 $(document).on("pagecreate","#map",function(){
 
+  
+  $("#askQuestion").on("click",function(event){
+    question();
+  });
   
   //start szukanie położenia po przyciśnieciu przycisku start_tracking
   //Id biegu to data z godzina minutą i sekundami
@@ -137,7 +206,7 @@ $(document).on("pagecreate","#map",function(){
       // Tidy up the UI
       track_id = date+" "+h+":"+m+":"+s;
       
-     
+
       
       $("#trackingStatus").html("Tracking workout: <strong> <br>" + track_id + "</strong>");
 
@@ -168,75 +237,6 @@ $(document).on("pagecreate","#map",function(){
 });
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
-//funkcja losujaca pytania i wyswietlajaca je
-function getQuestion()
-{
-  var x = Math.floor((Math.random() * 15) + 1);
-  $.getJSON("json/quizNew.json", function(json) {
-    var question=json[x.toString()];
-    $( "#questionQ" ).html(question.pytanie);
-    $( "#A" ).html(question.a);
-    $( "#B" ).html(question.b);
-    $( "#C" ).html(question.c);
-    //listenery do przyciskow A
-    $("#A").on("click",function(){
-      if(question.odp=="a")
-        {
-        points++;
-        console.log("dobrze");
-        }
-      else
-        {
-        }
-      $("#points").html("Points : <strong>" + points);
-      $('#questionPopoupDialog').popup('close');
-
-    });
-    //listenery do przyciskow B
-    $("#B").on("click",function(){
-      if(question.odp=="b")
-      {
-        points++;
-        console.log("dobrze");
-      }
-    else
-      {
-      
-      }
-      $("#points").html("Points : <strong>" + points);
-      $('#questionPopoupDialog').popup('close');
-
-    });
-    //listenery do przyciskow C
-    $("#C").on("click",function(){
-      if(question.odp=="c")
-      {
-        points++;
-        console.log("dobrze");
-      }
-    else
-      {
-      }
-      $("#points").html("Points : <strong>" + points);
-      $('#questionPopoupDialog').popup('close');
-    });
-    
-    
-//    usuwanie listenerow do przyciskow
-
-    
-   
-});
- 
-  
-}
-
-function question()
-{
-navigator.notification.vibrate(100);
-getQuestion();
-$('#questionPopoupDialog').popup('open',{positionTo:'#home'});
-}
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 //setInterval(function(){
@@ -299,15 +299,26 @@ $(document).on("pagecreate","#home",function(){
 });
 
 
-//funkcja przenoszaca do glownego strony i pokazujaca ile przebieglismy i w jakim czasie
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 $(document).on("click", "#historyTrack li a" ,function (event) {
+  event.preventDefault();
+  $("#map").attr("track_id", $(this).text());
+  $.mobile.navigate("#map");  
+  
+});
 
+$(document).on("pageshow","#map",function(){
+//funkcja przenoszaca do glownego strony i pokazujaca ile przebieglismy i w jakim czasie
+  var key = $(this).attr("track_id");
+  console.log("asdsad "+key);
+  if(key!=undefined){
+  
+  // Find the track_id of the workout they are viewing
   
   
-  // $("#track_info").attr("track_id", $(this).text());
-   track_id=$(this).text();
-   var data = window.localStorage.getItem(track_id);
+  // Update the Track Info page header to the track_id
+  $("#home div[data-role=header] h1").text(key);
+  
+   var data = window.localStorage.getItem(key);
    console.log(data);
    data = JSON.parse(data);
    // Calculate the total distance travelled
@@ -366,5 +377,6 @@ $(document).on("click", "#historyTrack li a" ,function (event) {
 
      // Apply the line to the map
      trackPath.setMap(map);
+  }
 
  });
