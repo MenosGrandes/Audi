@@ -59,6 +59,11 @@ function addZero(i) {
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 //funkcja losujaca pytania i wyswietlajaca je
 function getQuestion() {
+	$("#A").off();
+	$("#B").off();
+	$("#C").off();
+	
+	
  var x = Math.floor((Math.random() * 15) + 1);
  $.getJSON("json/quizNew.json", function (json) {
   var question = json[x.toString()];
@@ -104,23 +109,39 @@ function getQuestion() {
  });
 
 }
-jQuery(".popupopen").click(function() {
-  box = jQuery(this).attr('rel');
-  jQuery('#'+box).show();
-  width = -1 * parseInt((jQuery('#'+box).width()/2));
-  height = -1 * parseInt((jQuery('#'+box).height()/2));
-  jQuery('#'+box).css('margin-left',width).css('margin-top',height);
-  return false;
-});
-jQuery(".popupclose").click(function() {
-  jQuery(this).parent().hide();
-  return false;
-});
+// jQuery(".popupopen").click(function() {
+  // box = jQuery(this).attr('rel');
+  // jQuery('#'+box).show();
+  // width = -1 * parseInt((jQuery('#'+box).width()/2));
+  // height = -1 * parseInt((jQuery('#'+box).height()/2));
+  // jQuery('#'+box).css('margin-left',width).css('margin-top',height);
+  // return false;
+// });
+// jQuery(".popupclose").click(function() {
+  // jQuery(this).parent().hide();
+  // return false;
+// });
 function question() {
  //navigator.notification.vibrate(100);
  getQuestion();
- $( "#questionPopoupDialog" ).popup( "option", "positionTo", "origin" );
+ //	$( "#questionPopoupDialog" ).popup( "option", "positionTo", "origin" );
  $( '#questionPopoupDialog' ).popup('open');
+ var counter=5;
+ setInterval(function() {
+	 
+    counter--;
+    if (counter >= 0) {
+      var span = document.getElementById("count");
+      span.innerHTML = counter;
+    }
+    // Display 'counter' wherever you want to display it.
+    if (counter === 0) {
+        console.log('this is where it happens');
+        clearInterval(counter);
+    }
+    
+  }, 1000);
+ 
 }
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
