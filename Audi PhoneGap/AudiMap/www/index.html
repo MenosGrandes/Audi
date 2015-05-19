@@ -32,79 +32,79 @@
 
 		<div data-role="navbar">
 			<h1>Home</h1>
-			<ul>	
+			<ul>
 				<li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-top ui-corner-all "  data-transition="flip">Start</a></li>
 				<li><a href="#map" class="ui-btn ui-icon-location ui-btn-icon-top ui-corner-all " data-transition="flip">Map</a></li>
 				<li><a href="#options"   class="ui-btn ui-icon-gear ui-btn-icon-top ui-corner-all"data-transition="flip" >Options</a></li>
 				<li><a href="#history" class="ui-btn ui-icon-eye ui-btn-icon-top ui-corner-all"data-transition="flip" >History</a></li>
-				
+
 			</ul>
 		</div>
 		</div>
 		<!-- /header -->
 
-		
-			 <button id="playMusic" class="ui-btn ui-btn-icon-left ui-icon-check"	>Play</button> 
-	
+
+			 <button id="playMusic" class="ui-btn ui-btn-icon-left ui-icon-check"	>Play</button>
+
 		</div>
 
 		<!-- /content -->
 
 		<div data-role="footer">
-			
+
 		</div>
 		<!-- /footer -->
 
 	</div>
 	<!-- /page HOME -->
-	
-	
-	
-	
+
+
+
+
 <!-- 	page MAP -->
 <div data-role="page" id="map">
     <div data-role="header">
 		<div data-role="navbar">
 			<h1>Map</h1>
-			<ul>	
+			<ul>
 				<li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-top ui-corner-all "  data-transition="flip">Start</a></li>
 				<li><a href="#map" class="ui-btn ui-icon-location ui-btn-icon-top ui-corner-all " data-transition="flip">Map</a></li>
 				<li><a href="#options"   class="ui-btn ui-icon-gear ui-btn-icon-top ui-corner-all"data-transition="flip" >Options</a></li>
 				<li><a href="#history" class="ui-btn ui-icon-eye ui-btn-icon-top ui-corner-all"data-transition="flip" >History</a></li>
-				
+
 			</ul>
 		</div>
 	</div>
 		<!-- /header -->
 
 		<div data-role="content">
-		 	
-				<div data-role="popup" id="questionPopoupDialog" data-dismissible="false" data-overlay-theme="b" data-position-to="window">
+				<div data-role="popup" id="questionPopoupDialog" data-dismissible="false" data-overlay-theme="b"  class="ui-content">
 			        <div>
-			        <p  id="questionQ" ></p>
+					<h3 id="count">5</h3>
+			        <p id="questionQ" ></p>
 			            <button id="A" class="ui-btn"></button>
-			            <button id="B" class="ui-btn"></button>
-			            <button id="C" class="ui-btn"></button>
+			            <button id="B" class="ui-btn" ></button>
+			            <button id="C" class="ui-btn" ></button>
 			        </div>
 				</div>
-				<button id="askQuestion" class="ui-btn ui-btn-icon-left ui-icon-check "	>Question</button>  
-				
-				
+				<button id="askQuestion" class="ui-btn ui-btn-icon-left ui-icon-check "	>Question</button>
+
+
 				<p id="trackingStatus">Run </p>
 				<button class="ui-btn  ui-corner-all  ui-icon-check "  data-transition="pop" id="startTracking">Start Tracking</button>
-				<button id="stopTracking" class="ui-btn ui-btn-icon-left ui-icon-check "	>Stop Tracking</button>  
-				
+				<button id="stopTracking" class="ui-btn ui-btn-icon-left ui-icon-check "	>Stop Tracking</button>
+
 				<p id="points"></p>
 				<p id="track_info_info"></p>
 				<div style="width:100%;height:400px" id="map_canvas"></div>
-				
-					
+
+
 			</div>
 
 		<!-- /content -->
 
 		<div data-role="footer">
-			
+
 		</div>
 		<!-- /footer -->
 
@@ -117,12 +117,12 @@
     <div data-role="header">
 		<div data-role="navbar">
 			<h1>Options</h1>
-			<ul>	
+			<ul>
 				<li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-top ui-corner-all "  data-transition="flip">Start</a></li>
 				<li><a href="#map" class="ui-btn ui-icon-location ui-btn-icon-top ui-corner-all " data-transition="flip">Map</a></li>
 				<li><a href="#options"   class="ui-btn ui-icon-gear ui-btn-icon-top ui-corner-all"data-transition="flip" >Options</a></li>
 				<li><a href="#history" class="ui-btn ui-icon-eye ui-btn-icon-top ui-corner-all"data-transition="flip" >History</a></li>
-				
+
 			</ul>
 		</div>
 	</div>
@@ -130,26 +130,26 @@
 
 		<div data-role="content">
 		<button id="home_network_button" class="ui-btn ui-icon-check ui-btn-icon-top ui-corner-all">Internet Access Enabled</button>
-		<a  href="#warningPopout" data-rel="popup" class="ui-btn ui-icon-delete ui-btn-icon-top ui-corner-all">Clear History</a>
-				
-				
+		<a  href="#warningPopout" data-rel="popup" data-position-to="window" class="ui-btn ui-icon-delete ui-btn-icon-top ui-corner-all">Clear History</a>
+
+
 	<div data-role="popup" id="warningPopout" data-overlay-theme="b">
 			<form>
 				<div style="padding:10px 20px;">
 				  <h3 style="margin: 0 auto;">All data will be erased</h3>
 				 <button id="clearHistory" data-theme="b" data-inline="true">Accept</button>
 				 <button  data-theme="b" data-inline="true" onClick="  event.preventDefault(); $('#warningPopout').popup('close')">Decline</button>
-				 
+
 				</div>
 			</form>
-  	
+
 	</div>
 		</div>
 
 		<!-- /content -->
 
 		<div data-role="footer">
-			
+
 		</div>
 		<!-- /footer -->
 
@@ -162,12 +162,12 @@
     <div data-role="header">
 		<div data-role="navbar">
 			<h1>History</h1>
-			<ul>	
+			<ul>
 				<li><a href="#home" class="ui-btn ui-icon-home ui-btn-icon-top ui-corner-all "  data-transition="flip">Start</a></li>
 				<li><a href="#map" class="ui-btn ui-icon-location ui-btn-icon-top ui-corner-all " data-transition="flip">Map</a></li>
 				<li><a href="#options"   class="ui-btn ui-icon-gear ui-btn-icon-top ui-corner-all"data-transition="flip" >Options</a></li>
 				<li><a href="#history" class="ui-btn ui-icon-eye ui-btn-icon-top ui-corner-all"data-transition="flip" >History</a></li>
-				
+
 			</ul>
 		</div>
 	</div>
@@ -177,14 +177,14 @@
 					<p id="tracks_recorded"></p>
 
 	<ol data-role="listview" id="historyTrack">
-  
+
  	</ol>
 		</div>
 
 		<!-- /content -->
 
 		<div data-role="footer">
-			
+
 		</div>
 		<!-- /footer -->
 

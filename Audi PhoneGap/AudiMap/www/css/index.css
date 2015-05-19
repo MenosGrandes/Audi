@@ -1,7 +1,11 @@
-.center-button{
-	
-	margin: 0 auto;
-}
-* {
-    font: 14px Calibri,Arial !important;
+.popup { 
+  z-index:999; 
+  position:fixed; 
+  top:50%; 
+  left:50%; 
+  width:66%;
+  max-width:300px;
+  padding:20px; 
+  display:none;
+  text-align:center;  
 }

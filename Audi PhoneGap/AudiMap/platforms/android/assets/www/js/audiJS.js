@@ -59,11 +59,6 @@ function addZero(i) {
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 //funkcja losujaca pytania i wyswietlajaca je
 function getQuestion() {
-	$("#A").off();
-	$("#B").off();
-	$("#C").off();
-	
-	
  var x = Math.floor((Math.random() * 15) + 1);
  $.getJSON("json/quizNew.json", function (json) {
   var question = json[x.toString()];
@@ -126,22 +121,6 @@ function question() {
  getQuestion();
  $( "#questionPopoupDialog" ).popup( "option", "positionTo", "origin" );
  $( '#questionPopoupDialog' ).popup('open');
- var counter=5;
- setInterval(function() {
-	 
-    counter--;
-    if (counter >= 0) {
-      var span = document.getElementById("count");
-      span.innerHTML = counter;
-    }
-    // Display 'counter' wherever you want to display it.
-    if (counter === 0) {
-        console.log('this is where it happens');
-        clearInterval(counter);
-    }
-    
-  }, 1000);
- 
 }
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
