@@ -1,4 +1,4 @@
-/*.popup { 
+.popup { 
   z-index:999; 
   position:fixed; 
   top:50%; 
@@ -8,4 +8,4 @@
   padding:20px; 
   display:none;
   text-align:center;  
-}*/
+}

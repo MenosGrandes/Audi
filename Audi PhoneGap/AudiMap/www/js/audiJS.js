@@ -57,92 +57,7 @@ function addZero(i) {
  return i;
 }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-//funkcja losujaca pytania i wyswietlajaca je
-function getQuestion() {
-	$("#A").off();
-	$("#B").off();
-	$("#C").off();
-	
-	
- var x = Math.floor((Math.random() * 15) + 1);
- $.getJSON("json/quizNew.json", function (json) {
-  var question = json[x.toString()];
-  $("#questionQ").html(question.pytanie);
-  $("#A").html(question.a);
-  $("#B").html(question.b);
-  $("#C").html(question.c);
-  //listenery do przyciskow A
-  $("#A").on("click", function () {
-   if (question.odp == "a") {
-    points++;
-    console.log("dobrze");
 
-   } else {}
-   $("#points").html("Points : <strong>" + points);
-   $('#questionPopoupDialog').popup('close');
-
-  });
-  //listenery do przyciskow B
-  $("#B").on("click", function () {
-   if (question.odp == "b") {
-    points++;
-    console.log("dobrze");
-   } else {}
-   $("#points").html("Points : <strong>" + points);
-   $('#questionPopoupDialog').popup('close');
-
-  });
-  //listenery do przyciskow C
-  $("#C").on("click", function () {
-   if (question.odp == "c") {
-    points++;
-    console.log("dobrze");
-   } else {}
-   $("#points").html("Points : <strong>" + points);
-   $('#questionPopoupDialog').popup('close');
-
-  });
-
-  //    usuwanie listenerow do przyciskow
-
-
- });
-
-}
-jQuery(".popupopen").click(function() {
-  box = jQuery(this).attr('rel');
-  jQuery('#'+box).show();
-  width = -1 * parseInt((jQuery('#'+box).width()/2));
-  height = -1 * parseInt((jQuery('#'+box).height()/2));
-  jQuery('#'+box).css('margin-left',width).css('margin-top',height);
-  return false;
-});
-jQuery(".popupclose").click(function() {
-  jQuery(this).parent().hide();
-  return false;
-});
-function question() {
- //navigator.notification.vibrate(100);
- getQuestion();
- $( "#questionPopoupDialog" ).popup( "option", "positionTo", "origin" );
- $( '#questionPopoupDialog' ).popup('open');
- var counter=5;
- setInterval(function() {
-	 
-    counter--;
-    if (counter >= 0) {
-      var span = document.getElementById("count");
-      span.innerHTML = counter;
-    }
-    // Display 'counter' wherever you want to display it.
-    if (counter === 0) {
-        console.log('this is where it happens');
-        clearInterval(counter);
-    }
-    
-  }, 1000);
- 
-}
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 //Start szukanie pozycji GPS, start gry.
@@ -286,7 +201,7 @@ $(document).on("pagecreate", "#options", function () {
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
 $(document).on("pagecreate", "#home", function () {
-
+createModel("submarina");
  $("#playMusic").on("click", function () {
   var my_media = new Media("android_asset/www/sounds/pacman_chomp.mp3",
     // success callback
