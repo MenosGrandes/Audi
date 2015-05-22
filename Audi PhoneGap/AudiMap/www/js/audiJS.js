@@ -64,7 +64,7 @@ function addZero(i) {
 $(document).on("pagecreate", "#map", function () {
 
  $("#askQuestion").on("click", function (event) {
-  question();
+  Question.askQuestion();
  });
 
  //start szukanie położenia po przyciśnieciu przycisku start_tracking
