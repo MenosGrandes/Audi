@@ -201,6 +201,9 @@ $(document).on("pagecreate", "#options", function () {
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
 
 $(document).on("pagecreate", "#home", function () {
+	Animator.loadAnim();
+	Animator.createAnim();
+	Animator.counterAnim=setInterval(Animator.moveRunningMan,500);
 createModel("submarina");
  $("#playMusic").on("click", function () {
   var my_media = new Media("android_asset/www/sounds/pacman_chomp.mp3",
