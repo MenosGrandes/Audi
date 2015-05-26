@@ -6,20 +6,17 @@
            </div>
            <div class="center">Map</div>
        </ons-toolbar>
-        
+
         <div id="map_canvas"></div>
-        
-        <p class="par-search">
-            <input type="search" class="search-input search-input-map">
-        </p>
-        
+        <p id="trackingStatus" class="center_text">Workout Stoped</p>
+       <p id="track_info_info" class="center_text">asd</p>
         <p class="par-buttons">
-            <ons-button  class="btn-delete" ng-click="deleteAllMarkers()">
-                Delete all markers        
+            <ons-button  id="btn-startWorkout"  ng-click="startWorkout()" >
+               Start Workout
             </ons-button>
-            <ons-button class="btn-distance" ng-click="calculateDistance()">
-                Distance      
+            <ons-button id="btn-stopWorkout" ng-click="stopWorkout()" >
+                Stop Workout
             </ons-button>
-        </p>   
+        </p>
     </ons-page>
 </ons-navigator>
