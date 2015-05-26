@@ -1,13 +1,32 @@
-<ons-page>
-    <ons-toolbar>
-        <div class="left">
-            <ons-toolbar-button ng-click="slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+<ons-navigator ng-controller="SettingsController">
+    <ons-page>
+        <ons-toolbar>
+            <div class="left">
+                <ons-toolbar-button ng-click="slidingMenu.toggleMenu()"><ons-icon icon="bars"></ons-icon></ons-toolbar-button>
+            </div>
+            <div class="center">History</div>
+        </ons-toolbar>
+        <div style="text-align: center">
+            <h1>Settings</h1>
+
+            <button class="button button--large" ng-click="checkInternet()" id="button_Internet">Internet Enabled</button>
+            <br>
+            <button class="button button--large" id="button_ClearHistory" ng-click="clearHistory()">Clear History</button>
+
+            <ul class="list">
+                <li class="list__item">
+                    Questions
+                    <label class="switch switch--list-item">
+                        <input   id="questionOnOff" type="checkbox" class="switch__input" checked ">
+                        <div class="switch__toggle" ></div>
+                    </label>
+                </li>
+            </ul>
+
+
         </div>
-        <div class="center">Settings Page</div>
-    </ons-toolbar>
-    
-    <div style="text-align: center">
-        <h1>Settings</h1>
-        <ons-button onclick="slidingMenu.setMainPage('map.html')">Back</ons-button>
-    </div>
-</ons-page>
+
+    </ons-page>
+
+
+</ons-navigator>
