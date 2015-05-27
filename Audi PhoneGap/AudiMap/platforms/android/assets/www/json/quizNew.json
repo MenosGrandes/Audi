@@ -1,0 +1,121 @@
+﻿{
+  "1": {
+    "pytanie": "Jakie jest logo Audi?",
+    "a": "Cztery koła w różnych kolorach.",
+    "b": "Pięć kół w różnych kolorach.",
+    "c": "Cztery srebrne koła.",
+    "odp": "c"
+  },
+  
+  "2": {
+    "pytanie": "Co symbolizuje logo Audi?",
+    "a": "Połączenie w 1931 r. czterech gałęzi transportu.",
+    "b": "Połączenie w 1932 r. czterech niezależnych producentów.",
+    "c": "Cztery koła samochodu.",
+    "odp": "b"
+  },
+  
+  "3": {
+    "pytanie": "Kto założył firmę Audi?",
+    "a": "August Horch",
+    "b": "Karl Benz",
+    "c": "J. S. Rasmussen",
+    "odp": "a"
+  },
+  
+  "4": {
+    "pytanie":"Dlaczego pierwsze modele Audi miały kierownice po prawej stronie ?",
+    "a": "Ponieważ jednym ze wspólników był Anglik.",
+    "b": "Była to tendencja w samochodach ze względu na woźnice siedzącego po prawej stronie pojazdów konnych.",
+    "c": "Ówczesna technologia nie umożliwiała przestawienie kierownicy na inną stronę.",
+    "odp": "b"
+  },
+  
+  "5": {
+    "pytanie":"W którym roku poraz pierwszy Audi zaprezentowało samochód z kierownicą po lewej stronie?",
+    "a": "1921",
+    "b": "1919",
+    "c": "1924",
+    "odp": "a"
+  },
+  
+  "6": {
+    "pytanie":"Jak nazywał się model Audi z kierownicą po lewej stronie?",
+    "a": "Audi Typ A",
+    "b": "Audi Front",
+    "c": "Audi Typ K",
+    "odp": "c"
+  },
+  
+  "7": {
+    "pytanie":"Co innowacyjnego na tle innych europejskich aut wprowadził model Audi Front?",
+    "a": "Sześciocylindrowy silnik z napędem na przednią oś.",
+    "b": "Zmiana pozycji kierownicy z prawej na lewą stronę.",
+    "c": "1,5-litrowy silnik.",
+    "odp": "a"
+  },
+  
+  "8": {
+    "pytanie":"Jak wyglądała karoseria jednego z najbardziej popularnych modeli Audi w lata 30-tych?",
+    "a": "Była metalowa i pokryta sztuczną skórą.",
+    "b": "Była drewniana i pokryta sztuczną skórą.",
+    "c": "Była drewniana i pokryta prawdziwą skórą.",
+    "odp": "b"
+  },
+ 
+  "9": {
+    "pytanie":"Po wybuchu Drugiej Wojny Światowej na jaką produkcję przerzuciło się Audi?",
+    "a": "Na budowniczą.",
+    "b": "Nie zmieniło gałęzi produkcyjnej.",
+    "c": "Na zbrojeniową.",
+    "odp": "c"
+  },
+  
+  "10": {
+    "pytanie":"W którym roku od powstania marki przerwano produkcję Audi?",
+    "a": "1945",
+    "b": "1939",
+    "c": "1940",
+    "odp": "c"
+  },
+  
+  "11": {
+    "pytanie":"Co oznacza liczba występująca w nazwach modeli Audi po 1968 r. po frazie 'Audi'?",
+    "a": "Liczbę wyprodukowanych modeli.",
+    "b": "Liczbę koni mechanicznych.",
+    "c": "Średnicę tłoka.",
+    "odp": "b"
+  },
+  
+  "12": {
+    "pytanie":"Który z przykładów jest innowacyjnym rozwiązaniem technicznym Audi z 1977 r.?",
+    "a": "Pięciocylindrowy silnik benzynowy.",
+    "b": "Wtrysk bezpośredni K-Jetronic.",
+    "c": "Napęd na cztery koła - quattro.",
+    "odp": "a"
+  },
+  
+  "13": {
+    "pytanie":"Jaką nagrodę otrzymało Audi w 2014 r.?",
+    "a": "Audi TT WOrld Car Design of the Year.",
+    "b": "Audi R8: World Performance Car.",
+    "c": "Audi A3: World Car of the Year.",
+    "odp": "c"
+  },
+  
+  "14": {
+    "pytanie":"W którym mieście istniała fabryka Audi?",
+    "a": "W Poznaniu.",
+    "b": "W Warszawie.",
+    "c": "We Wrocławiu.",
+    "odp": "a"
+  },
+  
+  "15": {
+    "pytanie":"Którą z imprez sportowych sponsoruje Audi?",
+        "a": "Rajd Monte Carlo.",
+        "b": "Puchar Świata w narciarstwie alpejskim.",
+        "c": "Indywidualne mistrzostwa Niemiec na żużlu.",
+    "odp": "b"
+  }
+}

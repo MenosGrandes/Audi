@@ -1,0 +1,36 @@
+<ons-navigator ng-controller="MapController">
+    <ons-page ng-init="refreshMap()">
+        <ons-toolbar>
+            <div class="left">
+                <ons-toolbar-button ng-click="slidingMenu.toggleMenu()">
+                    <ons-icon icon="bars"></ons-icon>
+                </ons-toolbar-button>
+            </div>
+            <div class="center">Map</div>
+        </ons-toolbar>
+
+        <div id="map_canvas"></div>
+        <p id="trackingStatus" class="center_text">Workout Stoped</p>
+
+        <p id="track_info_info" class="center_text">asd</p>
+
+        <p class="par-buttons">
+            <ons-button id="btn-startWorkout" ng-click="startWorkout($event)">
+                Start Workout
+            </ons-button>
+            <ons-button id="btn-stopWorkout" ng-click="stopWorkout($event)">
+                Stop Workout
+            </ons-button>
+            <br>
+            <br>
+
+            <ons-button id="btn-showQuestion" ng-click="openNotify($event)">
+                Show Question
+            </ons-button>
+        </p>
+
+
+
+    </ons-page>
+
+</ons-navigator>

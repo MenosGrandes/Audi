@@ -1,0 +1,19 @@
+<ons-navigator ng-controller="HistoryController" var="navi">
+
+    <ons-page ng-init="refreshHistory()">
+        <ons-toolbar>
+            <div class="left">
+                <ons-toolbar-button ng-click="slidingMenu.toggleMenu()">
+                    <ons-icon icon="bars"></ons-icon>
+                </ons-toolbar-button>
+            </div>
+            <div class="center">History</div>
+        </ons-toolbar>
+
+        <p style="margin-left: 5%;" id="numberOfExercises">0 workouts recorded</p>
+        <ul class="list list--inset" id="historyTrackList">
+
+        </ul>
+
+    </ons-page>
+</ons-navigator>
