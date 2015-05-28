@@ -1,3 +1,8 @@
+<style type="text/css">
+    div.inline { float:left; }
+    .clearBoth { clear:both; }
+</style>
+
 <ons-navigator ng-controller="MapController">
     <ons-page ng-init="refreshMap()">
         <ons-toolbar>
@@ -13,7 +18,7 @@
         <p id="trackingStatus" class="center_text">Workout Stoped</p>
 
         <p id="track_info_info" class="center_text">Tracking info</p>
-        <p id="points" class="center_text">0</p>
+        <p id="points" class="center_text">Points : 0</p>
         <br>
         <p class="par-buttons">
             <ons-button id="btn-startWorkout" ng-click="startWorkout($event)">
@@ -29,7 +34,12 @@
                 Show Question
             </ons-button>
         </p>
+        <div style="width: 100%; overflow: hidden;">
 
+            <div class="audiAnim" style=" float: right;"> </div>
+            <div class="pacmanAnim" ></div>
+
+        </div>
 
 
     </ons-page>

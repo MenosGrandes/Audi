@@ -211,6 +211,9 @@ var Question =
 
 
             if (theService.msg.id != 0) {
+                document.getElementById("audiAnim").className="";
+                document.getElementById("pacmanAnim").className="";
+                document.getElementById("audiAnim").style="";
                 var data = window.localStorage.getItem(theService.msg);
                 data = JSON.parse(data);
 
@@ -288,6 +291,14 @@ var Question =
             //content.innerHTML="Internet Disabled";
 
             // $("#trackingStatus").html("Tracking workout: <strong> <br>" + track_id + "</strong>");
+            document.getElementById("audiAnimID").className="audiAnim";
+            document.getElementById("pacmanAnimID").className="pacmanAnim";
+            document.getElementById("audiAnimID").style.float="right";
+
+            console.log("pc"+document.getElementById("pacmanAnimID").className);
+            console.log("audi"+document.getElementById("audiAnimID").className);
+
+
         };
 
         $scope.stopWorkout = function (event) {

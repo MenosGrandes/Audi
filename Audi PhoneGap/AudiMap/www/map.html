@@ -1,3 +1,8 @@
+<style type="text/css">
+    div.inline { float:left; }
+    .clearBoth { clear:both; }
+</style>
+
 <ons-navigator ng-controller="MapController">
     <ons-page ng-init="refreshMap()">
         <ons-toolbar>
@@ -29,7 +34,12 @@
                 Show Question
             </ons-button>
         </p>
-        <div class="hi"></div>
+        <div style="width: 100%; overflow: hidden;">
+
+            <div id="audiAnimID" > </div>
+            <div id="pacmanAnimID"  ></div>
+
+        </div>
 
 
     </ons-page>
