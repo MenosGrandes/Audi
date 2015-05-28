@@ -86,7 +86,9 @@ var Map =
 
 };
 var Question =
-{};
+{
+    points: 0
+};
 
 (function () {
     var app = angular.module('myApp', ['onsen', 'ngDialog']);
@@ -104,9 +106,9 @@ var Question =
         ngDialogProvider.setDefaults({
             className: 'ngdialog-theme-default',
             plain: false,
-            showClose: true,
-            closeByDocument: true,
-            closeByEscape: true,
+            showClose: false,
+            closeByDocument: false,
+            closeByEscape: false,
             appendTo: false,
             preCloseCallback: function () {
                 console.log('default pre-close callback');
@@ -144,6 +146,7 @@ var Question =
             $scope.A = "";
             $scope.B = "";
             $scope.C = "";
+            $scope.ans="";
 
 
             $http.get('json/quizNew.json').success(function (data) {
@@ -153,9 +156,11 @@ var Question =
                 $scope.A = String(data[x].a);
                 $scope.B = String(data[x].b);
                 $scope.C = String(data[x].c);
+                $scope.ans= String(data[x].odp);
 
 
             });
+
 
             var dialog = ngDialog.open({
                 template: 'question.html',
@@ -164,7 +169,19 @@ var Question =
             });
             dialog.closePromise.then(function (data) {
                 console.log('ngDialog closed' + (data.value === 1 ? ' using the button' : '') + ' and notified by promise: ' + data.id);
+            document.getElementById("points").innerHTML = Question.points;
             });
+            $scope.btnClicked = function(btn)
+            {
+                if($scope.ans==btn)
+                {
+                    console.log("dobrze");
+                    Question.points++;
+                }
+                //tutaj jakaś animacja czy coś czy odpowiedział dobrze czy nie dobrze.
+                $timeout(dialog.close,2000);
+            }
+
         };
 
         $scope.points = 0;
