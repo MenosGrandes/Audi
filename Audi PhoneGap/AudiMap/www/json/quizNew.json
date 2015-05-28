@@ -9,8 +9,8 @@
   
   "2": {
     "pytanie": "Co symbolizuje logo Audi?",
-    "a": "Połączenie w 1931 r. czterech gałęzi transportu.",
-    "b": "Połączenie w 1932 r. czterech niezależnych producentów.",
+    "a": "Połączenie w 1931 r. 4 gałęzi transportu.",
+    "b": "Połączenie w 1932 r. 4 producentów.",
     "c": "Cztery koła samochodu.",
     "odp": "b"
   },
@@ -26,13 +26,13 @@
   "4": {
     "pytanie":"Dlaczego pierwsze modele Audi miały kierownice po prawej stronie ?",
     "a": "Ponieważ jednym ze wspólników był Anglik.",
-    "b": "Była to tendencja w samochodach ze względu na woźnice siedzącego po prawej stronie pojazdów konnych.",
-    "c": "Ówczesna technologia nie umożliwiała przestawienie kierownicy na inną stronę.",
+    "b": "Była to ówczesna tendencja w samochodach.",
+    "c": "Ówczesna technologia nie umożliwiała przestawienie kierownicy.",
     "odp": "b"
   },
   
   "5": {
-    "pytanie":"W którym roku poraz pierwszy Audi zaprezentowało samochód z kierownicą po lewej stronie?",
+    "pytanie":"Kiedy Audi zaprezentowało samochód z kierownicą po lewej stronie?",
     "a": "1921",
     "b": "1919",
     "c": "1924",
@@ -48,7 +48,7 @@
   },
   
   "7": {
-    "pytanie":"Co innowacyjnego na tle innych europejskich aut wprowadził model Audi Front?",
+    "pytanie":"Co innowacyjnego wprowadził model Audi Front?",
     "a": "Sześciocylindrowy silnik z napędem na przednią oś.",
     "b": "Zmiana pozycji kierownicy z prawej na lewą stronę.",
     "c": "1,5-litrowy silnik.",
@@ -56,7 +56,7 @@
   },
   
   "8": {
-    "pytanie":"Jak wyglądała karoseria jednego z najbardziej popularnych modeli Audi w lata 30-tych?",
+    "pytanie":"Jak wyglądała karoseria modelu Audi w lata 30-tych?",
     "a": "Była metalowa i pokryta sztuczną skórą.",
     "b": "Była drewniana i pokryta sztuczną skórą.",
     "c": "Była drewniana i pokryta prawdziwą skórą.",
@@ -64,7 +64,7 @@
   },
  
   "9": {
-    "pytanie":"Po wybuchu Drugiej Wojny Światowej na jaką produkcję przerzuciło się Audi?",
+    "pytanie":"Po wybuchu II WŚ na jaką produkcję przerzuciło się Audi?",
     "a": "Na budowniczą.",
     "b": "Nie zmieniło gałęzi produkcyjnej.",
     "c": "Na zbrojeniową.",
@@ -80,7 +80,7 @@
   },
   
   "11": {
-    "pytanie":"Co oznacza liczba występująca w nazwach modeli Audi po 1968 r. po frazie 'Audi'?",
+    "pytanie":"Co oznacza liczba występująca w nazwach modeli Audi?",
     "a": "Liczbę wyprodukowanych modeli.",
     "b": "Liczbę koni mechanicznych.",
     "c": "Średnicę tłoka.",

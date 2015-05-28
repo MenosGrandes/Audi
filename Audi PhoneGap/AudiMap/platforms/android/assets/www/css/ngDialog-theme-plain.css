@@ -4,7 +4,7 @@
 }
 
 .ngdialog.ngdialog-theme-plain .ngdialog-content {
-  background: #fff;
+  background: #242424;
   color: #444;
   font-family: 'Helvetica Neue',sans-serif;
   font-size: 1.1em;
@@ -13,7 +13,7 @@
   max-width: 100%;
   padding: 1em;
   position: relative;
-  width: 450px;
+  width: 90%;
 }
 
 .ngdialog.ngdialog-theme-plain .ngdialog-content h1,

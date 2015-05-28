@@ -6,6 +6,7 @@ var Map =
     tracking_data: [], // Array containing GPS position objects
     map: null,
     total_km: 0,
+    tracking_status:"",
 
     gps_distance: function (lat1, lon1, lat2, lon2) {
         // http://www.movable-type.co.uk/scripts/latlong.html
@@ -22,7 +23,7 @@ var Map =
         return d;
     },
     calculateTotalKmFromMap: function () {
-
+        if (document.getElementById("track_info_info") != null) {
         // position.coords;
         Map.total_km = 0;
 
@@ -49,12 +50,15 @@ var Map =
         final_time_s = total_time_s - (final_time_m * 60);
         final_time_s = final_time_s.toFixed(3);
 
-        document.getElementById("track_info_info").innerHTML = String('Travelled <strong>' + total_km_rounded + '</strong> km in <strong>' + final_time_m + 'm</strong> and <strong>' + final_time_s + 's</strong>')
 
+            document.getElementById("track_info_info").innerHTML = String('Travelled <strong>' + total_km_rounded + '</strong> km in <strong>' + final_time_m + 'm</strong> and <strong>' + final_time_s + 's</strong>')
+            Map.tracking_status=document.getElementById("track_info_info").innerHTML;
+        }
 
     },
     calculateTotalKmFromData: function (data) {
         // position.coords;
+        if (document.getElementById("track_info_info") != null) {
         var total_km = 0;
 
         for (i = 0; i < data.length; i++) {
@@ -80,8 +84,10 @@ var Map =
         final_time_s = total_time_s - (final_time_m * 60);
         final_time_s = final_time_s.toFixed(3);
 
-        document.getElementById("track_info_info").innerHTML = String('Travelled <strong>' + total_km_rounded + '</strong> km in <strong>' + final_time_m + 'm</strong> and <strong>' + final_time_s + 's</strong>')
 
+            document.getElementById("track_info_info").innerHTML = String('Travelled <strong>' + total_km_rounded + '</strong> km in <strong>' + final_time_m + 'm</strong> and <strong>' + final_time_s + 's</strong>')
+            Map.tracking_status=document.getElementById("track_info_info").innerHTML;
+        }
     }
 
 };
@@ -146,7 +152,7 @@ var Question =
             $scope.A = "";
             $scope.B = "";
             $scope.C = "";
-            $scope.ans="";
+            $scope.ans = "";
 
 
             $http.get('json/quizNew.json').success(function (data) {
@@ -156,7 +162,7 @@ var Question =
                 $scope.A = String(data[x].a);
                 $scope.B = String(data[x].b);
                 $scope.C = String(data[x].c);
-                $scope.ans= String(data[x].odp);
+                $scope.ans = String(data[x].odp);
 
 
             });
@@ -169,17 +175,15 @@ var Question =
             });
             dialog.closePromise.then(function (data) {
                 console.log('ngDialog closed' + (data.value === 1 ? ' using the button' : '') + ' and notified by promise: ' + data.id);
-            document.getElementById("points").innerHTML = Question.points;
+                document.getElementById("points").innerHTML= String("Points :"+Question.points);
             });
-            $scope.btnClicked = function(btn)
-            {
-                if($scope.ans==btn)
-                {
+            $scope.btnClicked = function (btn) {
+                if ($scope.ans == btn) {
                     console.log("dobrze");
                     Question.points++;
                 }
                 //tutaj jakaś animacja czy coś czy odpowiedział dobrze czy nie dobrze.
-                $timeout(dialog.close,2000);
+                $timeout(dialog.close, 2000);
             }
 
         };
@@ -198,6 +202,14 @@ var Question =
 
         $scope.refreshMap = function (event) {
             console.log("refresh " + theService.msg);
+            document.getElementById("track_info_info").innerHTML=Map.tracking_status;
+            if(Map.track_id!=null)
+            {
+                document.getElementById("trackingStatus").innerHTML = String("Tracking workout: <strong> <br>" + Map.track_id + "</strong>");
+
+            }
+
+
             if (theService.msg.id != 0) {
                 var data = window.localStorage.getItem(theService.msg);
                 data = JSON.parse(data);
@@ -241,7 +253,6 @@ var Question =
         }
 
         $scope.startWorkout = function (event) {
-            $scope.openNotify();
             var today = new Date();
             var date = today.toDateString();
 
@@ -253,11 +264,11 @@ var Question =
             Map.watch_id = navigator.geolocation.watchPosition(
                 // Success
                 function (position) {
-                    console.log(position);
+                    //console.log(position);
                     Map.tracking_data.push(position);
                     Map.calculateTotalKmFromMap();
 
-                    console.log(String(position));
+                    //console.log(String(position));
                 },
 
                 // Error

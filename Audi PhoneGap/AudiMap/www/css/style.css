@@ -37,3 +37,39 @@
 
 
 }
+.hi {
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/coin-sprite-animation.png);
+
+    -webkit-animation: play .8s steps(10) infinite;
+    -moz-animation: play .8s steps(10) infinite;
+    -ms-animation: play .8s steps(10) infinite;
+    -o-animation: play .8s steps(10) infinite;
+    animation: play .8s steps(10) infinite;
+}
+
+@-webkit-keyframes play {
+    from { background-position:    0px; }
+    to { background-position: -1000px; }
+}
+
+@-moz-keyframes play {
+    from { background-position:    0px; }
+    to { background-position: -1000px; }
+}
+
+@-ms-keyframes play {
+    from { background-position:    0px; }
+    to { background-position: -1000px; }
+}
+
+@-o-keyframes play {
+    from { background-position:    0px; }
+    to { background-position: -1000px; }
+}
+
+@keyframes play {
+    from { background-position:    0px; }
+    to { background-position: -1000px; }
+}
