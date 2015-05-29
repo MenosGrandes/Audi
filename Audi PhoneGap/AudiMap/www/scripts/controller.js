@@ -143,8 +143,7 @@ var Question =
 
     //Map controller
     //app.controller('MapController', function ($scope, $timeout) {
-    var MapController = function ($scope, $timeout, theService, ngDialog, $http) {
-
+    var MapController = function ($scope, $timeout, theService, ngDialog, $http,$window) {
 
         $scope.openNotify = function (event) {
 
@@ -188,9 +187,7 @@ var Question =
 
         };
 
-        $scope.points = 0;
 
-        $scope.currentExerciseKm = 0;
 
 
         $scope.addZero = function (i) {
@@ -295,10 +292,16 @@ var Question =
             document.getElementById("pacmanAnimID").className="pacmanAnim";
             document.getElementById("audiAnimID").style.float="right";
 
-            console.log("pc"+document.getElementById("pacmanAnimID").className);
-            console.log("audi"+document.getElementById("audiAnimID").className);
+            console.log("pc "+document.getElementById("pacmanAnimID").className);
+            console.log("audi "+document.getElementById("audiAnimID").className);
 
-
+           // $timeout( $scope.goAudi, 2000);
+            var the_box = document.getElementById("pacmanAnimID");
+            if (the_box.classList.contains("translator_left")) {
+                the_box.classList.remove("translator_left");
+            } else {
+                the_box.classList.add("translator_left");
+            }
         };
 
         $scope.stopWorkout = function (event) {
@@ -318,6 +321,23 @@ var Question =
             console.log("stoped tracking tracking");
 
         };
+
+
+        //$scope.goAudi = function()
+        //{
+        //   // console.log($window.innerWidth);
+        //    if($window.innerWidth>=$scope.leftMargin+200)
+        //    document.getElementById("pacmanAnimID").setAttribute("style",
+        //        "margin-left:" + $scope.leftMargin + "px");
+        //    //document.getElementById("audiAnimID").style.marginLeft=document.getElementById("audiAnimID").style.marginLeft+10+"%";
+        //
+        //    $timeout($scope.goAudi, 5);
+        //  //  console.log(document.getElementById("pacmanAnimID").style.marginLeft);
+        //    $scope.leftMargin+=1;
+        //
+        //};
+
+
     };
 
 

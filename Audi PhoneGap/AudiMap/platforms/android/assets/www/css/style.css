@@ -37,18 +37,28 @@
 
 
 }
+.none
+{
+
+}
 
 
 .pacmanAnim {
     width: 100px;
     height: 108px;
     background-image: url(../images/rmanAnim.png);
-
+    display:inline-block
     -webkit-animation: play2 .8s steps(8) infinite;
     -moz-animation: play2 .8s steps(8) infinite;
     -ms-animation: play2 .8s steps(8) infinite;
     -o-animation: play2 .8s steps(8) infinite;
     animation: play2 .8s steps(8) infinite;
+
+    -webkit-transition:all .5s ease-out;
+    -moz-transition:all .5s ease-out;
+    -ms-transition:all .5s ease-out;
+    -o-transition:all .5s ease-out;
+    transition:all .5s ease-out;
 }
 
 
@@ -56,17 +66,39 @@
     width: 100px;
     height: 100px;
     background-image: url(../images/coin-sprite-animation.png);
-
+    display:inline-block
     -webkit-animation: play .8s steps(10) infinite;
     -moz-animation: play .8s steps(10) infinite;
     -ms-animation: play .8s steps(10) infinite;
     -o-animation: play .8s steps(10) infinite;
     animation: play .8s steps(10) infinite;
+
+    -webkit-transition:all 1s ease-out;
+    -moz-transition:all 1s ease-out;
+    -ms-transition:all 1s ease-out;
+    -o-transition:all 1s ease-out;
+    transition:all 1s ease-out;
+
 }
 
+.translator_left {
+    -webkit-transform:translate(100px,0px);
+    -moz-transform:translate(100px,0px);
+    -ms-transform:translate(100px,0px);
+    -o-transform:translate(100px,0px);
+    transform:translate(100px,0px);
+}
+.translator_right {
+    -webkit-transform:translate(-100px,0px);
+    -moz-transform:translate(-100px,0px);
+    -ms-transform:translate(-100px,0px);
+    -o-transform:translate(-100px,0px);
+    transform:translate(-100px,0px);
+}
 @-webkit-keyframes play {
     from { background-position:    0px; }
     to { background-position: -1000px; }
+
 }
 
 @-moz-keyframes play {
@@ -93,6 +125,7 @@
 @-webkit-keyframes play2 {
     from { background-position:    0px; }
     to { background-position: -864px; }
+
 }
 
 @-moz-keyframes play2 {
