@@ -13,21 +13,20 @@ var Map =
         var R = 6371; // km
         var dLat = (lat2 - lat1) * (Math.PI / 180);
         var dLon = (lon2 - lon1) * (Math.PI / 180);
-        var lat1 = lat1 * (Math.PI / 180);
-        var lat2 = lat2 * (Math.PI / 180);
+        lat1 *= (Math.PI / 180);
+        lat2 *= (Math.PI / 180);
 
         var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.sin(dLon / 2) * Math.sin(dLon / 2) * Math.cos(lat1) * Math.cos(lat2);
         var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-        var d = R * c;
 
-        return d;
+        return R * c;
     },
     calculateTotalKmFromMap: function () {
         if (document.getElementById("track_info_info") != null) {
         // position.coords;
         Map.total_km = 0;
 
-        for (i = 0; i < Map.tracking_data.length; i++) {
+        for (var i = 0; i < Map.tracking_data.length; i++) {
 
             if (i == (Map.tracking_data.length - 1)) {
                 break;
@@ -35,23 +34,21 @@ var Map =
             Map.total_km += Map.gps_distance(Map.tracking_data[i].coords.latitude, Map.tracking_data[i].coords.longitude, Map.tracking_data[i + 1].coords.latitude, Map.tracking_data[i + 1].coords.longitude);
         }
 
-        total_km_rounded = Map.total_km.toFixed(2);
-
-        currentExerciseKm = total_km_rounded;
+        var total_km_rounded = Map.total_km.toFixed(2);
 
         // Calculate the total time taken for the track
-        start_time = new Date(Map.tracking_data[0].timestamp).getTime();
-        end_time = new Date(Map.tracking_data[Map.tracking_data.length - 1].timestamp).getTime();
+        var start_time = new Date(Map.tracking_data[0].timestamp).getTime();
+        var end_time = new Date(Map.tracking_data[Map.tracking_data.length - 1].timestamp).getTime();
 
-        total_time_ms = end_time - start_time;
-        total_time_s = total_time_ms / 1000;
+        var total_time_ms = end_time - start_time;
+       var total_time_s = total_time_ms / 1000;
 
-        final_time_m = Math.floor(total_time_s / 60);
-        final_time_s = total_time_s - (final_time_m * 60);
-        final_time_s = final_time_s.toFixed(3);
+        var final_time_m = Math.floor(total_time_s / 60);
+        var final_time_s = total_time_s - (final_time_m * 60);
+         final_time_s = final_time_s.toFixed(3);
 
 
-            document.getElementById("track_info_info").innerHTML = String('Travelled <strong>' + total_km_rounded + '</strong> km in <strong>' + final_time_m + 'm</strong> and <strong>' + final_time_s + 's</strong>')
+            document.getElementById("track_info_info").innerHTML = String('Travelled <strong>' + total_km_rounded + '</strong> km in <strong>' + final_time_m + 'm</strong> and <strong>' + final_time_s + 's</strong>');
             Map.tracking_status=document.getElementById("track_info_info").innerHTML;
         }
 
@@ -61,7 +58,7 @@ var Map =
         if (document.getElementById("track_info_info") != null) {
         var total_km = 0;
 
-        for (i = 0; i < data.length; i++) {
+        for (var i = 0; i < data.length; i++) {
 
             if (i == (data.length - 1)) {
                 break;
@@ -69,23 +66,22 @@ var Map =
             total_km += Map.gps_distance(data[i].coords.latitude, data[i].coords.longitude, data[i + 1].coords.latitude, data[i + 1].coords.longitude);
         }
 
-        total_km_rounded = total_km.toFixed(2);
+        var total_km_rounded = total_km.toFixed(2);
 
-        currentExerciseKm = total_km_rounded;
 
         // Calculate the total time taken for the track
-        start_time = new Date(data[0].timestamp).getTime();
-        end_time = new Date(data[data.length - 1].timestamp).getTime();
+        var start_time = new Date(data[0].timestamp).getTime();
+        var end_time = new Date(data[data.length - 1].timestamp).getTime();
 
-        total_time_ms = end_time - start_time;
-        total_time_s = total_time_ms / 1000;
+        var total_time_ms = end_time - start_time;
+        var total_time_s = total_time_ms / 1000;
 
-        final_time_m = Math.floor(total_time_s / 60);
-        final_time_s = total_time_s - (final_time_m * 60);
+        var final_time_m = Math.floor(total_time_s / 60);
+        var final_time_s = total_time_s - (final_time_m * 60);
         final_time_s = final_time_s.toFixed(3);
 
 
-            document.getElementById("track_info_info").innerHTML = String('Travelled <strong>' + total_km_rounded + '</strong> km in <strong>' + final_time_m + 'm</strong> and <strong>' + final_time_s + 's</strong>')
+            document.getElementById("track_info_info").innerHTML = String('Travelled <strong>' + total_km_rounded + '</strong> km in <strong>' + final_time_m + 'm</strong> and <strong>' + final_time_s + 's</strong>');
             Map.tracking_status=document.getElementById("track_info_info").innerHTML;
         }
     }
@@ -95,7 +91,19 @@ var Question =
 {
     points: 0
 };
+var Animations =
+{
+    set_translate:function(e,pixX,pixY,time)
+    {
+        //e.style["-webkit-transform"] = "translate(" pixX +"px," + pixY +"px)";
+        //e.style["-moz-transform"] = "translate(0px, -" + pix +"px)";
+        //e.style["-ms-transform"] = "translate(0px, -" + pix + "px)";
+        //e.style["-o-transform"] = "translate(0px, " + pix  + "px)";
+        e.style["transform"] = "translate("+pixX +"px, -" + pixY + "px)";
+        e.style["transition-duration"] = time+"s";
 
+    }
+};
 (function () {
     var app = angular.module('myApp', ['onsen', 'ngDialog']);
     app.factory('theService', function () {
@@ -145,7 +153,7 @@ var Question =
     //app.controller('MapController', function ($scope, $timeout) {
     var MapController = function ($scope, $timeout, theService, ngDialog, $http,$window) {
 
-        $scope.openNotify = function (event) {
+        $scope.openNotify = function () {
 
             $scope.question = "";
             $scope.A = "";
@@ -183,7 +191,7 @@ var Question =
                 }
                 //tutaj jakaś animacja czy coś czy odpowiedział dobrze czy nie dobrze.
                 $timeout(dialog.close, 2000);
-            }
+            };
 
         };
 
@@ -195,9 +203,9 @@ var Question =
                 i = "0" + i;
             }
             return i;
-        }
+        };
 
-        $scope.refreshMap = function (event) {
+        $scope.refreshMap = function () {
             console.log("refresh " + theService.msg);
             document.getElementById("track_info_info").innerHTML=Map.tracking_status;
             if(Map.track_id!=null)
@@ -210,7 +218,6 @@ var Question =
             if (theService.msg.id != 0) {
                 document.getElementById("audiAnim").className="";
                 document.getElementById("pacmanAnim").className="";
-                document.getElementById("audiAnim").style="";
                 var data = window.localStorage.getItem(theService.msg);
                 data = JSON.parse(data);
 
@@ -250,9 +257,9 @@ var Question =
 
 
             }
-        }
+        };
 
-        $scope.startWorkout = function (event) {
+        $scope.startWorkout = function () {
             var today = new Date();
             var date = today.toDateString();
 
@@ -295,16 +302,24 @@ var Question =
             console.log("pc "+document.getElementById("pacmanAnimID").className);
             console.log("audi "+document.getElementById("audiAnimID").className);
 
-           // $timeout( $scope.goAudi, 2000);
-            var the_box = document.getElementById("pacmanAnimID");
-            if (the_box.classList.contains("translator_left")) {
-                the_box.classList.remove("translator_left");
-            } else {
-                the_box.classList.add("translator_left");
+            $timeout( $scope.Animate, 2000);
+
+
+        };
+        $scope.Animate = function()
+        {
+
+            Animations.set_translate(document.getElementById("pacmanAnimID"),$window.innerWidth-100,0,1);
+            $scope.audiPosition = document.getElementById("pacmanAnimID").getBoundingClientRect().x;
+            console.log($window.innerWidth);
+            if($scope.audiPosition>$window.innerWidth-150)
+            {
+                console.log("hurrra");
             }
+             $timeout( $scope.Animate, 2000);
         };
 
-        $scope.stopWorkout = function (event) {
+        $scope.stopWorkout = function () {
 
             // Stop tracking the user
             navigator.geolocation.clearWatch(Map.watch_id);
@@ -343,9 +358,8 @@ var Question =
 
     //app.controller('SettingsController', function ($scope) {
     var SettingsController = function ($scope) {
-        $scope.questionBool = false;
-        console.log("SettingsController");
-        $scope.checkInternet = function (event) {
+
+        $scope.checkInternet = function () {
             var content = document.getElementById("button_Internet");
 
             if (!navigator.onLine) {
@@ -359,13 +373,12 @@ var Question =
                 ons.notification.alert({
                     message: 'Internet is ON.'
                 });
-                console.log("internet")
                 content.innerHTML = "Internet Enabled";
 
             }
 
         };
-        $scope.clearHistory = function (event) {
+        $scope.clearHistory = function () {
 
             window.localStorage.clear();
             ons.notification.confirm({
@@ -383,23 +396,13 @@ var Question =
             });
 
         };
-        //Nie dziala coś wiec olewam
 
-        $scope.switchForQuestions = function (event) {
-            var switchQuestion = document.getElementById("questionOnOff");
-            $scope.questionBool = switchQuestion.isChecked();
-            console.log("asdasdsad");
-            //questionOnOff
-            //switchQuestion
-        };
 
     };
 
-    //app.controller('HistoryController', function ($scope,$timeout) {
-
     var HistoryController = function ($scope, $timeout, theService) {
 
-        $scope.refreshHistory = function (event) {
+        $scope.refreshHistory = function () {
 
             var tracks_recorded = window.localStorage.length;
             document.getElementById("numberOfExercises").innerHTML = String("<strong>" + tracks_recorded + "</strong> workouts recorded");
