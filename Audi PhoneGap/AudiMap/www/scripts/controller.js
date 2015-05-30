@@ -104,6 +104,32 @@ var Animations =
 
     }
 };
+/* Wymyślłem że pacman zaczyna za nami podąrzać dopiero po zdobyciu przez nas 5 waypointów.
+* Jak GPS złapie 5 punktów, czyli już jakaś wartość przebiegliśmy, to na podstawie odległości przebytej:
+* całkowitej dla wszystkich punktów
+* oraz dla każdego punktu z osobna
+* zostanie obliczona średnia prędkość na przebytej odległości i z taką predkośią będzie poruszał się PacMan
+*
+* Za każdym razem gdy gps złapie piątą z kolei lokalizację ta prędkość będzie korygowana.
+*
+* Poziom trudności będzie polegał na tym będzie można PacMana zwolnić albo przyspieszyć.
+* Czyli zostanie zaproksymowane z jaką predkością porusza się biegacz i na podstawie tego będzie możan do tej prędkości dodac lub odjąć procentową wartosć.
+*
+* Czasowe ewenty też wchodzą w gre. W sensie że co jakiś czas PacMan przyspieszy i będzie to sygnalizowane poprzez albo dzwięk albo wibrację
+*
+* */
+var Audi =
+    {
+        position : 0,
+        aproximatePosition:function()
+        {
+
+        }
+    };
+var PacMan =
+    {
+        position : 0
+    }
 (function () {
     var app = angular.module('myApp', ['onsen', 'ngDialog']);
     app.factory('theService', function () {
