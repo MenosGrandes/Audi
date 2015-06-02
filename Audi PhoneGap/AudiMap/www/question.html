@@ -1,21 +1,24 @@
-<p style="text-align:center">
+<!-- icon=ion-checkmark-round - dobrze -->
+<!-- ion-close-round -zle -->
 
-    <code style="color:white"> {{question}}</code>
+<div style="text-align: center">
 
-    <br><br>
+	<code style="color: white"> {{question}}</code>
+	<br> <br>
 
-    <ons-button id="btn-A" ng-click="btnClicked('a')">
-        {{A}}
-    </ons-button>
-    <br><br>
-    <ons-button id="btn-B" ng-click="btnClicked('b')">
-        {{B}}
-    </ons-button>
-    <br><br>
-    <ons-button id="btn-C" ng-click="btnClicked('c')">
-        {{C}}
-    </ons-button>
+	<ons-icon ng-hide="isAns" id="btnIcon-A" icon={{iconA}}></ons-icon>
+	<ons-button id="btn-A" ng-click="btnClicked('a')"> {{A}} </ons-button>
 
-</p>
+	<br> <br>
+
+	<ons-icon ng-hide="isAns" id="btnIcon-B" icon={{iconB}}></ons-icon>
+	<ons-button id="btn-B" ng-click="btnClicked('b')"> {{B}} </ons-button>
+
+	<br> <br>
+
+	<ons-icon ng-hide="isAns" id="btnIcon-C" icon={{iconC}}></ons-icon>
+	<ons-button id="btn-C" ng-click="btnClicked('c')"> {{C}} </ons-button>
+
+</div>
 
 <!--<p>External modal template with external scope: <code>{{value}}</code></p>-->
