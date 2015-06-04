@@ -2,119 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c716a92-4cfc-4bcb-99cb-0bf917735218" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/dist/angular-chart.js.tar.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular/angular.min.js.gzip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular/angular.min.js.gzip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/Chart.js/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular-chart.js/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/Chart.js/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/Chart.js/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/docs/00-Getting-Started.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/docs/01-Line-Chart.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/docs/02-Bar-Chart.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/docs/03-Radar-Chart.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/docs/04-Polar-Area-Chart.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/docs/05-Pie-Doughnut-Chart.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/docs/06-Advanced.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/docs/07-Notes.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/Chart.js/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/src/Chart.Bar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/Chart.js/src/Chart.Bar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/src/Chart.Core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/Chart.js/src/Chart.Core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/src/Chart.Doughnut.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/Chart.js/src/Chart.Doughnut.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/src/Chart.Line.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/Chart.js/src/Chart.Line.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/src/Chart.PolarArea.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/Chart.js/src/Chart.PolarArea.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/src/Chart.Radar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/Chart.js/src/Chart.Radar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/Chart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/Chart.js/Chart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/Chart.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/Chart.js/Chart.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/Chart.js/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular-chart.js/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/Chart.js/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular-chart.js/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/dist/angular-chart.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular-chart.js/dist/angular-chart.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/dist/angular-chart.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular-chart.js/dist/angular-chart.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/angular-chart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/dist/angular-chart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular-chart.js/angular-chart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular-chart.js/dist/angular-chart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/angular-chart.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular-chart.js/angular-chart.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/dist/angular-chart.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular-chart.js/dist/angular-chart.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/dist/angular-chart.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular-chart.js/dist/angular-chart.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular/angular-csp.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular/angular-csp.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular/angular.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular/angular.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular/angular.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular/angular.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/examples/app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/examples/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/samples/bar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/examples/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/Chart.js/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular-chart.js/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/examples/charts.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/examples/charts.template.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/samples/doughnut.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/Chart.js/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular-chart.js/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/samples/line-customTooltips.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/samples/line.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/Chart.js/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular-chart.js/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/samples/pie-customTooltips.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/samples/pie.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/samples/polar-area.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/Chart.js/samples/radar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/examples/smoothscroll.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/examples/stacked-bars-directive.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/examples/stacked-bars.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/examples/tables.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/angular-chart.js/examples/ticks.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/scripts/controller.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/scripts/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/controller.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/history.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/history.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/history.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/history.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/index.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/index.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Audi.iws" />
@@ -161,8 +48,8 @@
       <file leaf-file-name="history.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/history.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6463878">
-              <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.581749">
+              <caret line="18" column="45" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -823,9 +710,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="748" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2569546" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2569546" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.114854515" sideWeight="0.50292826" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1253,8 +1140,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/history.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6463878">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.581749">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="45" />
           <folding />
         </state>
       </provider>
