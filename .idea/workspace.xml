@@ -2,81 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c716a92-4cfc-4bcb-99cb-0bf917735218" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\Chart.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\Chart.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\LICENSE.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\docs\00-Getting-Started.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\docs\01-Line-Chart.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\docs\02-Bar-Chart.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\docs\03-Radar-Chart.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\docs\04-Polar-Area-Chart.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\docs\05-Pie-Doughnut-Chart.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\docs\06-Advanced.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\docs\07-Notes.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\samples\bar.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\samples\doughnut.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\samples\line-customTooltips.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\samples\line.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\samples\pie-customTooltips.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\samples\pie.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\samples\polar-area.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\samples\radar.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\src\Chart.Bar.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\src\Chart.Core.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\src\Chart.Doughnut.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\src\Chart.Line.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\src\Chart.PolarArea.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\Chart.js\src\Chart.Radar.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\angular-chart.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\angular-chart.less" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\dist\angular-chart.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\dist\angular-chart.css.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\dist\angular-chart.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\dist\angular-chart.js.tar.gz" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\dist\angular-chart.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\dist\angular-chart.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\examples\app.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\examples\app.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\examples\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\examples\charts.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\examples\charts.template.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\examples\smoothscroll.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\examples\stacked-bars-directive.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\examples\stacked-bars.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\examples\tables.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\examples\ticks.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular-chart.js\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular\.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular\angular-csp.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular\angular.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular\angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular\angular.min.js.gzip" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular\angular.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular\bower.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\angular\package.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/scripts/controller.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/scripts/controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/controller.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/index.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/map.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/map.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/settings.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/settings.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/settings.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/settings.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Audi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,116 +26,8 @@
       <file leaf-file-name="controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30947775">
-              <caret line="191" column="65" selection-start-line="191" selection-start-column="65" selection-end-line="191" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="map.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/map.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.43396226">
-              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#ons-page#0;n#ons-navigator#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#ons-page#0;n#ons-navigator#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/settings.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.730769">
-              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Chart.Bar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/Chart.js/src/Chart.Bar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
-              <folding>
-                <marker date="1433408008433" expanded="true" signature="1136:1179" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="history.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/history.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.769231">
-              <caret line="18" column="45" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.076923">
-              <caret line="22" column="19" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <marker date="1433421493231" expanded="true" signature="1058:1162" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loader.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/components/loader.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1442" column="12814" selection-start-line="1442" selection-start-column="12814" selection-end-line="1442" selection-end-column="12814" />
-              <folding>
-                <marker date="1432563604484" expanded="true" signature="357104:357174" placeholder="..." />
-                <marker date="1432563604484" expanded="true" signature="357240:357432" placeholder="..." />
-                <marker date="1432563604484" expanded="true" signature="357451:357527" placeholder="..." />
-                <marker date="1432563604484" expanded="true" signature="360879:360892" placeholder="..." />
-                <marker date="1432563604484" expanded="true" signature="399503:399585" placeholder="..." />
-                <marker date="1432563604484" expanded="true" signature="407506:407576" placeholder="..." />
-                <marker date="1432563604484" expanded="true" signature="441779:441861" placeholder="..." />
-                <marker date="1432563604484" expanded="true" signature="503726:503782" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.30095237">
+              <caret line="225" column="0" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -679,7 +497,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="748" extended-state="7" />
+    <frame x="-4" y="-4" width="1374" height="748" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2569546" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -778,7 +596,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding>
-            <marker date="1433421493231" expanded="true" signature="1058:1162" placeholder="..." />
+            <marker date="1433421493231" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -817,7 +635,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1433421493231" expanded="true" signature="1058:1162" placeholder="..." />
+            <marker date="1433421493231" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1038,14 +856,14 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="1442" column="12814" selection-start-line="1442" selection-start-column="12814" selection-end-line="1442" selection-end-column="12814" />
           <folding>
-            <marker date="1432563604484" expanded="true" signature="357104:357174" placeholder="..." />
-            <marker date="1432563604484" expanded="true" signature="357240:357432" placeholder="..." />
-            <marker date="1432563604484" expanded="true" signature="357451:357527" placeholder="..." />
-            <marker date="1432563604484" expanded="true" signature="360879:360892" placeholder="..." />
-            <marker date="1432563604484" expanded="true" signature="399503:399585" placeholder="..." />
-            <marker date="1432563604484" expanded="true" signature="407506:407576" placeholder="..." />
-            <marker date="1432563604484" expanded="true" signature="441779:441861" placeholder="..." />
-            <marker date="1432563604484" expanded="true" signature="503726:503782" placeholder="..." />
+            <marker date="1432563604484" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1432563604484" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1432563604484" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1432563604484" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1432563604484" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1432563604484" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1432563604484" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1432563604484" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1055,7 +873,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
           <folding>
-            <marker date="1433408008433" expanded="true" signature="1136:1179" placeholder="..." />
+            <marker date="1433408008433" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1089,7 +907,7 @@
         <state vertical-scroll-proportion="-11.730769">
           <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1099,8 +917,7 @@
         <state vertical-scroll-proportion="-0.43396226">
           <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#ons-page#0;n#ons-navigator#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#ons-page#0;n#ons-navigator#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#ons-page#0;n#ons-navigator#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1110,15 +927,15 @@
         <state vertical-scroll-proportion="-11.076923">
           <caret line="22" column="19" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <marker date="1433421493231" expanded="true" signature="1058:1162" placeholder="..." />
+            <marker date="1433421493231" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30947775">
-          <caret line="191" column="65" selection-start-line="191" selection-start-column="65" selection-end-line="191" selection-end-column="65" />
+        <state vertical-scroll-proportion="0.30095237">
+          <caret line="225" column="0" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
           <folding />
         </state>
       </provider>

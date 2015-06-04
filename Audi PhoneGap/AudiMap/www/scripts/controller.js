@@ -121,25 +121,21 @@ var Animations = {
  */
 var WORKOUT_STATE =
 {
-    STARTED :0,
-    STOPPED :1
+    STARTED: 0,
+    STOPPED: 1
 };
 var HumanSizes =
 {
-    width :0,
-    height :0,
-    age :0,
+    weight: 0,
+    height: 0,
+    age: 0,
     gender: "male"
 }
-var Audi = {
-
-};
-var PacMan = {
-
-};
+var Audi = {};
+var PacMan = {};
 /*http://www.shapesense.com/fitness-exercise/calculators/activity-based-calorie-burn-calculator.aspx
  https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxjb21wZW5kaXVtb2ZwaHlzaWNhbGFjdGl2aXRpZXN8Z3g6NmNhZWIwM2FjZjhkMzcxMQ
-*/
+ */
 var Calculations =
 {
     R4mph: 6.0,
@@ -166,77 +162,78 @@ var Calculations =
 
     /*
      * Oblicza i zwraca BMR.
-     * weight - waga
-     * height - wzrost
+     * weight - waga kg
+     * height - wzrost cm
      * age - wiek
-     * time - czas ćwiczenia
+     * time - czas ćwiczenia w godzinach
      * speed - prędkość biegu (średnia z całego czasu)
      * */
     calculateBMR: function (time, speed) {
         var met = 0;
         var bmr = 0;
         //
-        if (speed > 0 && speed < MileforKm(4)) {
-
+        if (speed > 0 && speed < this.MileforKm(4)) {
+            met = this.R4mph;
         }
-        else if (speed >= MileforKm(4) && speed < MileforKm(5) )
-        {}
-        else if (speed >= MileforKm(5) && speed < MileforKm(5.2))
-        {}
-        else if (speed >= MileforKm(5.2) && speed < MileforKm(6))
-        {}
-        else if (speed >= MileforKm(6) && speed < MileforKm(6.7))
-        {}
-        else if (speed >= MileforKm(6.7) && speed < MileforKm(7))
-        {}
-        else if (speed >= MileforKm(7) && speed < MileforKm(7.5))
-        {}
-        else if (speed >= MileforKm(7.5) && speed < MileforKm(8))
-        {}
-        else if (speed >= MileforKm(8) && speed < MileforKm(8.6))
-        {};
-        //else if ()
-        //{}
-        //else if ()
-        //{}
-        //else if ()
-        //{}
-        //else if ()
-        //{}
-        //else if ()
-        //{}
-        //else if ()
-        //{}
-        //else if ()
-        //{}
-        //else if ()
-        //{}
-        //else if ()
-        //{}
-        //else if ()
-        //{}
-        //else if ()
-        //{}
-        //else if ()
-        //{}
-        //else if ()
-        //{}
-        //else if ()
-        //{}
+        else if (speed >= this.MileforKm(4) && speed < this.MileforKm(5)) {
+            met = this.R5mph;
+        }
+        else if (speed >= this.MileforKm(5) && speed < this.MileforKm(5.2)) {
+            met = this.R5_2mph
+        }
+        else if (speed >= this.MileforKm(5.2) && speed < this.MileforKm(6)) {
+            met = this.R6mph
+        }
+        else if (speed >= this.MileforKm(6) && speed < this.MileforKm(6.7)) {
+            met = this.R6_7mph
+        }
+        else if (speed >= this.MileforKm(6.7) && speed < this.MileforKm(7)) {
+            met = this.R7mph
+        }
+        else if (speed >= this.MileforKm(7) && speed < this.MileforKm(7.5)) {
+            met = this.R7_5mph
+        }
+        else if (speed >= this.MileforKm(7.5) && speed < this.MileforKm(8)) {
+            met = this.R8mph
+        }
+        else if (speed >= this.MileforKm(8) && speed < this.MileforKm(8.6)) {
+            met = this.R8_6mph
+        }
+        else if (speed >= this.MileforKm(8.6) && speed < this.MileforKm(9)) {
+            console.log("r9mph");
+            met = this.R9mph
+        }
+        else if (speed >= this.MileforKm(9) && speed < this.MileforKm(10)) {
+            console.log("R10mph");
+            met = this.R10mph
+        }
+        else if (speed >= this.MileforKm(10) && speed < this.MileforKm(11)) {
+            met = this.R11mph
+        }
+        else if (speed >= this.MileforKm(11) && speed < this.MileforKm(12)) {
+            met = this.R12mph
+        }
+        else if (speed >= this.MileforKm(12) && speed < this.MileforKm(13)) {
+            met = this.R13mph
+        }
+        else if (speed >= this.MileforKm(13) && speed < this.MileforKm(14)) {
+            met = this.R14mph
+        }
+        else {
+            console.log("nie wiem o co chodzi");
+        }
+
 
         //woman
-        if (HumanSizes.gender=="female") {
-             bmr = (9.56 * HumanSizes.width) + (1.85 * HumanSizes.height) - (4.68 * HumanSizes.age) + 655;
+        if (HumanSizes.gender == "female") {
+            bmr = (9.56 * HumanSizes.weight) + (1.85 * HumanSizes.height) - (4.68 * HumanSizes.age) + 655;
 
         }
         //man
         else {
-
-            bmr = (13.75 * HumanSizes.width) + (5 * HumanSizes.height) - (6.76 * HumanSizes.age) + 655;
-
+           bmr = (13.75 * HumanSizes.weight) + (5 * HumanSizes.height) - (6.76 * HumanSizes.age) + 665;
         }
-        return (bmr / 24) * met * time
-
+        return ((bmr / 24) * this.R9mph * time)
     }
 
 };
@@ -284,18 +281,16 @@ var Calculations =
     };
 
 
-    var MapController = function ($scope, $timeout, theService, ngDialog, $http
-                                  ) {
-        $scope.startDate= 0;
+    var MapController = function ($scope, $timeout, theService, ngDialog, $http) {
+        $scope.startDate = 0;
         $scope.stateOfWorkout = -1;
 
         $scope.clock = "0:0:0"; // initialise the time variable
         $scope.tickInterval = 1000 //ms
         $scope.clockTimer = 0;
-        $scope.calculateTimeDiff = function()
-        {
+        $scope.calculateTimeDiff = function () {
 
-            var diff=Date.now() - $scope.startDate ;
+            var diff = Date.now() - $scope.startDate;
             var msec = diff;
             var hh = Math.floor(msec / 1000 / 60 / 60);
             msec -= hh * 1000 * 60 * 60;
@@ -303,34 +298,29 @@ var Calculations =
             msec -= mm * 1000 * 60;
             var ss = Math.floor(msec / 1000);
             msec -= ss * 1000;
-            return String(hh +":" +mm+ ":"+ss);
-
+            return String(hh + ":" + mm + ":" + ss);
 
 
         }
-        var tick = function() {
-            $scope.clock =$scope.calculateTimeDiff();  // get the current time
-            $scope.clockTimer= $timeout(tick, $scope.tickInterval); // reset the timer
+        var tick = function () {
+            $scope.clock = $scope.calculateTimeDiff();  // get the current time
+            $scope.clockTimer = $timeout(tick, $scope.tickInterval); // reset the timer
             Map.calculateTotalKmFromMap();
         }
 
-        $scope.$watch('stateOfWorkout', function(newValue, oldValue) {
-            if($scope.stateOfWorkout==WORKOUT_STATE.STOPPED)
-            {
+        $scope.$watch('stateOfWorkout', function (newValue, oldValue) {
+            if ($scope.stateOfWorkout == WORKOUT_STATE.STOPPED) {
                 $timeout.cancel($scope.clockTimer);
-                $scope.clock="0:0:0";
+                $scope.clock = "0:0:0";
                 console.log("stop");
             }
-            else if($scope.stateOfWorkout==WORKOUT_STATE.STARTED)
-            {
+            else if ($scope.stateOfWorkout == WORKOUT_STATE.STARTED) {
                 $timeout(tick, $scope.tickInterval);
 
             }
         });
 
         // Start the timer
-
-
 
 
         $scope.openNotify = function () {
@@ -418,8 +408,22 @@ var Calculations =
                     + Map.track_id + "</strong>");
 
             }
+
+            HumanSizes.age=21;
+            HumanSizes.gender="female";
+            HumanSizes.height=165;
+            HumanSizes.weight=65;
+
+            console.log("calculate "+Calculations.calculateBMR(1,14));
+
             console.log("checkService id");
             if (theService.msg.id != 0) {
+
+
+
+
+
+
 
                 document.getElementById("audiAnimID").className = "";
                 document.getElementById("pacmanAnimID").className = "";
@@ -470,9 +474,9 @@ var Calculations =
 
         $scope.startWorkout = function () {
 
-            $scope.stateOfWorkout=WORKOUT_STATE.STARTED;
+            $scope.stateOfWorkout = WORKOUT_STATE.STARTED;
             var today = new Date();
-            $scope.startDate=today;
+            $scope.startDate = today;
             var date = today.toDateString();
 
             var h = $scope.addZero(today.getHours());
@@ -513,13 +517,13 @@ var Calculations =
             document.getElementById("pacmanAnimID").className = "pacmanAnim";
             document.getElementById("audiAnimID").style.float = "right";
 
-           // $timeout($scope.Animate, 2000);
+            // $timeout($scope.Animate, 2000);
 
         };
         $scope.Animate = function () {
 
-           // Animations.set_translate(document.getElementById("pacmanAnimID"),
-                //1000, 0, 1);
+            // Animations.set_translate(document.getElementById("pacmanAnimID"),
+            //1000, 0, 1);
             // $scope.audiPosition =
             // document.getElementById("pacmanAnimID").getBoundingClientRect().x;
             //console.log(document.getElementById("pacmanAnimID").classList);
@@ -527,11 +531,11 @@ var Calculations =
             // {
             // console.log("hurrra");
             // }
-           // $timeout($scope.Animate, 2000);
+            // $timeout($scope.Animate, 2000);
         };
 
         $scope.stopWorkout = function () {
-            $scope.stateOfWorkout=WORKOUT_STATE.STOPPED;
+            $scope.stateOfWorkout = WORKOUT_STATE.STOPPED;
 
             // Stop tracking the user
             navigator.geolocation.clearWatch(Map.watch_id);
@@ -652,7 +656,6 @@ var Calculations =
         };
 
     };
-
 
 
     app.controller('HistoryController', HistoryController);
