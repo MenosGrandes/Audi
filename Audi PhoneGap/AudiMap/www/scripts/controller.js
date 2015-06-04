@@ -147,8 +147,9 @@ var Audi = {
 var PacMan = {
 	position : 0
 };
+
 (function() {
-	var app = angular.module('myApp', [ 'onsen', 'ngDialog' ]);
+	var app = angular.module('myApp', [ 'onsen','chart.js', 'ngDialog' ]);
 	app.factory('theService', function() {
 		return {
 			msg : {
@@ -499,7 +500,18 @@ var PacMan = {
 			// sharedService.prepForBroadcast({message: 'hujku działaj'});
 			// console.log(event.target.id);
 
-		}
+		};
+
+        $scope.labels = ["January", "February", "March", "April", "May", "June", "July"];
+        $scope.series = ['Series A', 'Series B'];
+        $scope.data = [
+            [65, 59, 80, 81, 56, 55, 40],
+            [28, 48, 40, 19, 86, 27, 90]
+        ];
+        $scope.onClick = function (points, evt) {
+            console.log(points, evt);
+        };
+
 	};
 
 	app.controller('HistoryController', HistoryController);
