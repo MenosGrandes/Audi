@@ -1,5 +1,3 @@
-
-
 <ons-navigator ng-controller="MapController">
     <ons-page ng-init="refreshMap()">
         <ons-toolbar>
@@ -14,9 +12,15 @@
         <div id="map_canvas"></div>
         <p id="trackingStatus" class="center_text">Workout Stoped</p>
 
-        <p id="track_info_info" class="center_text">Tracking info</p>
+        <div style="text-align: center">
+            <p id="track_info_info">Tracking info</p>
+
+            <p id="clock">{{ clock | date:'medium'}}</p>
+
+        </div>
         <p id="points" class="center_text">Points : 0</p>
         <br>
+
         <p class="par-buttons">
             <ons-button id="btn-startWorkout" ng-click="startWorkout($event)">
                 Start Workout
@@ -33,8 +37,8 @@
         </p>
         <div style="width: 100%; overflow: hidden;">
 
-            <div id="audiAnimID"> </div>
-            <div id="pacmanAnimID"  ></div>
+            <div id="audiAnimID"></div>
+            <div id="pacmanAnimID"></div>
 
         </div>
 
