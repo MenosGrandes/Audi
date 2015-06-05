@@ -5,6 +5,11 @@
     margin-top :30%;
     z-index: -1
 }
+.circle_canvas
+{
+    width: 30%;
+    height: 30%;
+}
 
 .search-input-map{
     width:60%;

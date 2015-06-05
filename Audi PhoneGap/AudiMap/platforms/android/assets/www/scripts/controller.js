@@ -1,11 +1,11 @@
 // controller.js
 var Map = {
-    track_id: '', // Name/ID of the exercise
+    track_id: null, // Name/ID of the exercise
     watch_id: null, // ID of the geolocation
     tracking_data: [], // Array containing GPS position objects
     map: null,
     total_km: 0,
-    tracking_status: "",
+    tracking_status: "0.00",
 
     gps_distance: function (lat1, lon1, lat2, lon2) {
         // http://www.movable-type.co.uk/scripts/latlong.html
@@ -23,7 +23,7 @@ var Map = {
     },
     calculateTotalKmFromMap: function () {
         if (document.getElementById("track_info_info") != null) {
-            // position.coords;
+
             Map.total_km = 0;
 
             for (var i = 0; i < Map.tracking_data.length; i++) {
@@ -39,28 +39,8 @@ var Map = {
             }
 
             var total_km_rounded = Map.total_km.toFixed(2);
-
-            // Calculate the total time taken for the track
-            var start_time = new Date(Map.tracking_data[0].timestamp).getTime();
-            var end_time = new Date(
-                Map.tracking_data[Map.tracking_data.length - 1].timestamp)
-                .getTime();
-
-            var total_time_ms = end_time - start_time;
-            var total_time_s = total_time_ms / 1000;
-
-            var final_time_m = Math.floor(total_time_s / 60);
-            var final_time_s = total_time_s - (final_time_m * 60);
-            final_time_s = final_time_s.toFixed(3);
-
-            document.getElementById("track_info_info").innerHTML = String('Travelled <strong>'
-                + total_km_rounded
-                + '</strong> km in <strong>'
-                + final_time_m
-                + 'm</strong> and <strong>'
-                + final_time_s
-                + 's</strong>');
-            Map.tracking_status = document.getElementById("track_info_info").innerHTML;
+            Map.tracking_status = total_km_rounded;
+            Clock.clocker(total_km_rounded, "track_info_info");
         }
 
     },
@@ -89,17 +69,14 @@ var Map = {
             var total_time_s = total_time_ms / 1000;
 
             var final_time_m = Math.floor(total_time_s / 60);
-            var final_time_s = total_time_s - (final_time_m * 60);
-            final_time_s = final_time_s.toFixed(3);
+            var final_time_s = parseInt(total_time_s - (final_time_m * 60));
 
-            document.getElementById("track_info_info").innerHTML = String('Travelled <strong>'
-                + total_km_rounded
-                + '</strong> km in <strong>'
-                + final_time_m
-                + 'm</strong> and <strong>'
-                + final_time_s
-                + 's</strong>');
-            Map.tracking_status = document.getElementById("track_info_info").innerHTML;
+
+            var total_km_rounded = Map.total_km.toFixed(2);
+            Map.tracking_status = total_km_rounded;
+            Clock.clocker(total_km_rounded, "track_info_info");
+            Clock.clocker(String("0:" + final_time_m + ":" + final_time_s), "clock");
+
         }
     }
 
@@ -138,16 +115,79 @@ var Animations = {
  * przyspieszy i będzie to sygnalizowane poprzez albo dzwięk albo wibrację
  * 
  */
-var Audi = {
+var MapStatisticElement =
+{
     position: 0,
-    aproximatePosition: function () {
+    time: 0,
+    speed: 0
+
+}
+var WORKOUT_STATE =
+{
+    STARTED: 0,
+    STOPPED: 1
+};
+var HumanSizes =
+{
+    weight: 0,
+    height: 0,
+    age: 0,
+    gender: "male"
+};
+var Clock =
+{
+    startDate: 0,
+    clock: "0:0:0", // initialise the time variable
+    tickInterval: 1000, //ms
+    clockTimer: 0,
+    clockCanvas2d: null,
+
+    clocker: function (string, element) {
+
+        var canvas = document.getElementById(element);
+        if (canvas.getContext) {
+            var ctx = canvas.getContext("2d");
+
+            ctx.beginPath();
+            ctx.fillStyle = "rgb(248, 81, 47)";
+            ctx.arc(canvas.width / 2, canvas.height / 2, canvas.height / 2 - canvas.height * 0.02, 0, 2 * Math.PI, false);
+            ctx.fill();
+
+            ctx = canvas.getContext("2d");
+            Clock.clockCanvas2d = ctx;
+            ctx.font = '18pt Calibri';
+            ctx.fillStyle = 'white';
+            ctx.textAlign = 'center';
+            ctx.lineWidth = 6;
+            ctx.strokeStyle = 'black';
+            ctx.stroke();
+            ctx.fillText(string, canvas.width / 2, canvas.height / 2);
+        }
+    },
+    calculateTimeDiff: function (option) {
+
+        var diff = Date.now() - Clock.startDate;
+        var msec = diff;
+        var hh = Math.floor(msec / 1000 / 60 / 60);
+        msec -= hh * 1000 * 60 * 60;
+        var mm = Math.floor(msec / 1000 / 60);
+        msec -= mm * 1000 * 60;
+        var ss = Math.floor(msec / 1000);
+        msec -= ss * 1000;
+        if (option == 1) {
+            return String(hh + ":" + mm + ":" + ss);
+        }
+        else if (option == 2) {
+            Clock.clock = String(hh + ":" + mm + ":" + ss);  // get the current time
+        }
 
     }
 };
-var PacMan = {
-    position: 0
-};
-//http://www.shapesense.com/fitness-exercise/calculators/activity-based-calorie-burn-calculator.aspx
+var Audi = {};
+var PacMan = {};
+/*http://www.shapesense.com/fitness-exercise/calculators/activity-based-calorie-burn-calculator.aspx
+ https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxjb21wZW5kaXVtb2ZwaHlzaWNhbGFjdGl2aXRpZXN8Z3g6NmNhZWIwM2FjZjhkMzcxMQ
+ */
 var Calculations =
 {
     R4mph: 6.0,
@@ -165,39 +205,87 @@ var Calculations =
     R12mph: 19.0,
     R13mph: 19.8,
     R14mph: 23.0,
-    MforKm: function (mile) {
+    MileforKm: function (mile) {
         return mile * 1.609344;
     },
-    KmforM: function (km) {
+    KmforMile: function (km) {
         return km / 1.609344;
     },
+
     /*
      * Oblicza i zwraca BMR.
-     * weight - waga
-     * height - wzrost
+     * weight - waga kg
+     * height - wzrost cm
      * age - wiek
-     * time - czas ćwiczenia
+     * time - czas ćwiczenia w godzinach
      * speed - prędkość biegu (średnia z całego czasu)
      * */
-    calculateBMR: function (weight, height, age, time, speed,gender) {
+    calculateBMR: function (time, speed) {
         var met = 0;
-        var bmr= 0;
+        var bmr = 0;
+        //
+        if (speed > 0 && speed < this.MileforKm(4)) {
+            met = this.R4mph;
+        }
+        else if (speed >= this.MileforKm(4) && speed < this.MileforKm(5)) {
+            met = this.R5mph;
+        }
+        else if (speed >= this.MileforKm(5) && speed < this.MileforKm(5.2)) {
+            met = this.R5_2mph
+        }
+        else if (speed >= this.MileforKm(5.2) && speed < this.MileforKm(6)) {
+            met = this.R6mph
+        }
+        else if (speed >= this.MileforKm(6) && speed < this.MileforKm(6.7)) {
+            met = this.R6_7mph
+        }
+        else if (speed >= this.MileforKm(6.7) && speed < this.MileforKm(7)) {
+            met = this.R7mph
+        }
+        else if (speed >= this.MileforKm(7) && speed < this.MileforKm(7.5)) {
+            met = this.R7_5mph
+        }
+        else if (speed >= this.MileforKm(7.5) && speed < this.MileforKm(8)) {
+            met = this.R8mph
+        }
+        else if (speed >= this.MileforKm(8) && speed < this.MileforKm(8.6)) {
+            met = this.R8_6mph
+        }
+        else if (speed >= this.MileforKm(8.6) && speed < this.MileforKm(9)) {
+            console.log("r9mph");
+            met = this.R9mph
+        }
+        else if (speed >= this.MileforKm(9) && speed < this.MileforKm(10)) {
+            console.log("R10mph");
+            met = this.R10mph
+        }
+        else if (speed >= this.MileforKm(10) && speed < this.MileforKm(11)) {
+            met = this.R11mph
+        }
+        else if (speed >= this.MileforKm(11) && speed < this.MileforKm(12)) {
+            met = this.R12mph
+        }
+        else if (speed >= this.MileforKm(12) && speed < this.MileforKm(13)) {
+            met = this.R13mph
+        }
+        else if (speed >= this.MileforKm(13) && speed < this.MileforKm(14)) {
+            met = this.R14mph
+        }
+        else {
+            console.log("nie wiem o co chodzi");
+        }
 
-        //if(speed>0 &&)
 
         //woman
-        if (gender==1) {
-             bmr = (9.56 * weight) + (1.85 * height) - (4.68 * age) + 655;
+        if (HumanSizes.gender == "female") {
+            bmr = (9.56 * HumanSizes.weight) + (1.85 * HumanSizes.height) - (4.68 * HumanSizes.age) + 655;
 
         }
         //man
         else {
-
-            bmr = (13.75 * weight) + (5 * height) - (6.76 * age) + 655;
-
+            bmr = (13.75 * HumanSizes.weight) + (5 * HumanSizes.height) - (6.76 * HumanSizes.age) + 665;
         }
-        return (bmr / 24) * met * time
-
+        return ((bmr / 24) * met * time)
     }
 
 };
@@ -244,10 +332,42 @@ var Calculations =
         $scope.checkSlidingMenuStatus();
     };
 
-    // Map controller
-    // app.controller('MapController', function ($scope, $timeout) {
-    var MapController = function ($scope, $timeout, theService, ngDialog, $http,
-                                  $window) {
+
+    var MapController = function ($scope, $timeout, theService, ngDialog, $http) {
+
+        $scope.stateOfWorkout = -1;
+        $scope.labels = 0;//= ["January", "February", "March", "April", "May", "June", "July"];
+        $scope.series = 0;//= ['Series A', 'Series B'];
+        $scope.data = 0;
+        /*= [
+         [65, 59, 80, 81, 56, 55, 40],
+         [28, 48, 40, 19, 86, 27, 90]
+         ];*/
+
+        var tick = function () {
+            Clock.calculateTimeDiff(2);  // get the current time
+            Clock.clockTimer = $timeout(tick, Clock.tickInterval); // reset the timer
+            Clock.clocker(Clock.clock.toString(), "clock");
+
+            Map.calculateTotalKmFromMap();
+        };
+
+        $scope.$watch('stateOfWorkout', function (newValue, oldValue) {
+            if ($scope.stateOfWorkout == WORKOUT_STATE.STOPPED) {
+                $timeout.cancel(Clock.clockTimer);
+                Clock.clock = "0:0:0";
+                Clock.clocker(Clock.clock.toString(), "clock");
+
+                console.log("stop");
+            }
+            else if ($scope.stateOfWorkout == WORKOUT_STATE.STARTED) {
+                $timeout(tick, Clock.tickInterval);
+
+            }
+        });
+
+        // Start the timer
+
 
         $scope.openNotify = function () {
 
@@ -326,15 +446,37 @@ var Calculations =
         };
 
         $scope.refreshMap = function () {
-            console.log("refresh " + theService.msg);
-            document.getElementById("track_info_info").innerHTML = Map.tracking_status;
+
+
+            $scope.onClick = function (points, evt) {
+                console.log(points, evt);
+            };
+
+            Clock.clocker("0:0:0", "clock");
+            Clock.clocker(Map.tracking_status, "track_info_info");
+
+
             if (Map.track_id != null) {
                 document.getElementById("trackingStatus").innerHTML = String("Tracking workout: <strong> <br>"
                     + Map.track_id + "</strong>");
 
             }
+            else {
+                var today = new Date();
+                document.getElementById("trackingStatus").innerHTML = String("Date: <strong> <br>"
+                    + today.toDateString() + "</strong>");
+            }
+///////////////////////////////////////////
+            HumanSizes.age = 21;
+            HumanSizes.gender = "female";
+            HumanSizes.height = 165;
+            HumanSizes.weight = 65;
+
+           // console.log("calculate " + Calculations.calculateBMR(1, 14));
+///////////////////////////////////////////
             console.log("checkService id");
             if (theService.msg.id != 0) {
+
 
                 document.getElementById("audiAnimID").className = "";
                 document.getElementById("pacmanAnimID").className = "";
@@ -344,7 +486,7 @@ var Calculations =
                 data = JSON.parse(data);
 
                 Map.calculateTotalKmFromData(data);
-
+                 $scope.setMapDiagramData(data,theService.msg.id);
                 var myLatLng = new google.maps.LatLng(data[0].coords.latitude,
                     data[0].coords.longitude);
 
@@ -385,7 +527,9 @@ var Calculations =
 
         $scope.startWorkout = function () {
 
+            $scope.stateOfWorkout = WORKOUT_STATE.STARTED;
             var today = new Date();
+            Clock.startDate = today;
             var date = today.toDateString();
 
             var h = $scope.addZero(today.getHours());
@@ -398,9 +542,9 @@ var Calculations =
                 function (position) {
                     // console.log(position);
                     Map.tracking_data.push(position);
-                    Map.calculateTotalKmFromMap();
 
-                    // console.log(String(position));
+
+                    //console.log(String(position.speed));
                 },
 
                 // Error
@@ -418,21 +562,18 @@ var Calculations =
             Map.track_id = date + " " + h + ":" + m + ":" + s;
             document.getElementById("trackingStatus").innerHTML = String("Tracking workout: <strong> <br>"
                 + Map.track_id + "</strong>");
-            // content.innerHTML="Internet Disabled";
 
-            // $("#trackingStatus").html("Tracking workout: <strong> <br>" +
-            // track_id + "</strong>");
             document.getElementById("audiAnimID").className = "audiAnim";
             document.getElementById("pacmanAnimID").className = "pacmanAnim";
             document.getElementById("audiAnimID").style.float = "right";
 
-           // $timeout($scope.Animate, 2000);
+            // $timeout($scope.Animate, 2000);
 
         };
         $scope.Animate = function () {
 
-           // Animations.set_translate(document.getElementById("pacmanAnimID"),
-                //1000, 0, 1);
+            // Animations.set_translate(document.getElementById("pacmanAnimID"),
+            //1000, 0, 1);
             // $scope.audiPosition =
             // document.getElementById("pacmanAnimID").getBoundingClientRect().x;
             //console.log(document.getElementById("pacmanAnimID").classList);
@@ -440,10 +581,11 @@ var Calculations =
             // {
             // console.log("hurrra");
             // }
-           // $timeout($scope.Animate, 2000);
+            // $timeout($scope.Animate, 2000);
         };
 
         $scope.stopWorkout = function () {
+            $scope.stateOfWorkout = WORKOUT_STATE.STOPPED;
 
             // Stop tracking the user
             navigator.geolocation.clearWatch(Map.watch_id);
@@ -453,6 +595,9 @@ var Calculations =
                 .stringify(Map.tracking_data));
             console.log("stoped " + Map.track_id);
             // Reset watch_id and tracking_data
+
+            //$scope.setMapDiagram();
+
             Map.watch_id = null;
             Map.tracking_data = [];
 
@@ -463,20 +608,49 @@ var Calculations =
 
         };
 
-        // $scope.goAudi = function()
-        // {
-        // // console.log($window.innerWidth);
-        // if($window.innerWidth>=$scope.leftMargin+200)
-        // document.getElementById("pacmanAnimID").setAttribute("style",
-        // "margin-left:" + $scope.leftMargin + "px");
-        // //document.getElementById("audiAnimID").style.marginLeft=document.getElementById("audiAnimID").style.marginLeft+10+"%";
-        //
-        // $timeout($scope.goAudi, 5);
-        // //
-        // console.log(document.getElementById("pacmanAnimID").style.marginLeft);
-        // $scope.leftMargin+=1;
-        //
-        // };
+        $scope.setMapDiagramData = function (data, track_id) {
+            $scope.series = "asdasd";
+            for (var i = 0; i < data.length; i++) {
+                //console.log(String(track_id) + " " + data[i].toString())
+                $scope.labels[i] = data[i].timestamp//= ["January", "February", "March", "April", "May", "June", "July"];
+                //= ['Series A', 'Series B'];
+                $scope.data[i] = data[i].speed;
+                /*= [
+                 [65, 59, 80, 81, 56, 55, 40],
+                 [28, 48, 40, 19, 86, 27, 90]
+                 ];*/
+            }
+            $scope.onClick = function (points, evt) {
+                console.log(points, evt);
+            };
+            console.log("diagramData");
+        }
+        $scope.setMapDiagram = function () {
+            $scope.series = Map.track_id;
+            for (var i = 0; i < Map.tracking_data.length; i++) {
+                console.log(String(Map.track_id) + " " + Map.tracking_data[i].toString())
+                $scope.labels[i] = Map.tracking_data[i].timestamp//= ["January", "February", "March", "April", "May", "June", "July"];
+                //= ['Series A', 'Series B'];
+                $scope.data[i] = Map.tracking_data[i].speed;
+                /*= [
+                 [65, 59, 80, 81, 56, 55, 40],
+                 [28, 48, 40, 19, 86, 27, 90]
+                 ];*/
+            }
+            $scope.onClick = function (points, evt) {
+                console.log(points, evt);
+            };
+            console.log("diagram");
+            /*
+             $scope.labels= ["January", "February", "March", "April", "May", "June", "July"];
+             $scope.series= ['Series A', 'Series B'];
+             $scope.data = [
+             [65, 59, 80, 81, 56, 55, 40],
+             [28, 48, 40, 19, 86, 27, 90]
+             ];*/
+
+        };
+
 
     };
 
@@ -550,38 +724,13 @@ var Calculations =
             }
             theService.msg = event.target.id;
 
-            // sharedService.prepForBroadcast({message: 'hujku działaj'});
-            // console.log(event.target.id);
 
         };
 
-        $scope.labels = ["January", "February", "March", "April", "May", "June", "July"];
-        $scope.series = ['Series A', 'Series B'];
-        $scope.data = [
-            [65, 59, 80, 81, 56, 55, 40],
-            [28, 48, 40, 19, 86, 27, 90]
-        ];
-        $scope.onClick = function (points, evt) {
-            console.log(points, evt);
-        };
 
     };
 
 
-    function TimeCtrl($scope, $timeout) {
-        $scope.clock = "loading clock..."; // initialise the time variable
-        $scope.tickInterval = 1000 //ms
-
-        var tick = function() {
-            $scope.clock = Date.now() // get the current time
-            $timeout(tick, $scope.tickInterval); // reset the timer
-        }
-
-        // Start the timer
-        $timeout(tick, $scope.tickInterval);
-    }
-
-    app.controller("TimeCtrl",TimeCtrl);
     app.controller('HistoryController', HistoryController);
     app.controller('SettingsController', SettingsController);
     app.controller('MapController', MapController);

@@ -13,9 +13,10 @@
         <p id="trackingStatus" class="center_text">Workout Stoped</p>
 
         <div style="text-align: center">
-            <p id="track_info_info">Tracking info</p>
+            <canvas id="clock" class="circle_canvas"></canvas>
+            <canvas id="track_info_info" class="circle_canvas">Tracking info</canvas>
 
-            <p id="clock">{{ clock | date:'medium'}}</p>
+
 
         </div>
         <p id="points" class="center_text">Points : 0</p>
@@ -41,6 +42,10 @@
             <div id="pacmanAnimID"></div>
 
         </div>
+        <canvas id="line" class="chart chart-line" data="data"
+                labels="labels" legend="true" series="series"
+                click="onClick">
+        </canvas>
 
 
     </ons-page>
