@@ -121,7 +121,7 @@ var MapStatisticElement =
     time: 0,
     speed: 0
 
-}
+};
 var WORKOUT_STATE =
 {
     STARTED: 0,
@@ -336,13 +336,13 @@ var Calculations =
     var MapController = function ($scope, $timeout, theService, ngDialog, $http) {
 
         $scope.stateOfWorkout = -1;
-        $scope.labels = 0;//= ["January", "February", "March", "April", "May", "June", "July"];
-        $scope.series = 0;//= ['Series A', 'Series B'];
-        $scope.data = 0;
-        /*= [
-         [65, 59, 80, 81, 56, 55, 40],
-         [28, 48, 40, 19, 86, 27, 90]
-         ];*/
+        //$scope.labels =[];// = ["January", "February", "March", "April", "May", "June", "July"];
+        //$scope.series =[];// = ['Series A', 'Series B'];
+        //$scope.data;//
+        ////= [
+        //// [65, 59, 80, 81, 56, 55, 40],
+        //// [28, 48, 40, 19, 86, 27, 90]
+        //// ];
 
         var tick = function () {
             Clock.calculateTimeDiff(2);  // get the current time
@@ -481,12 +481,14 @@ var Calculations =
                 document.getElementById("audiAnimID").className = "";
                 document.getElementById("pacmanAnimID").className = "";
 
-
+                $scope.setMapDiagramData();
+                /*
                 var data = window.localStorage.getItem(theService.msg);
                 data = JSON.parse(data);
 
                 Map.calculateTotalKmFromData(data);
-                 $scope.setMapDiagramData(data,theService.msg.id);
+                 //
+
                 var myLatLng = new google.maps.LatLng(data[0].coords.latitude,
                     data[0].coords.longitude);
 
@@ -521,7 +523,7 @@ var Calculations =
 
                 // Apply the line to the map
                 trackPath.setMap(Map.map);
-
+*/
             }
         };
 
@@ -608,48 +610,28 @@ var Calculations =
 
         };
 
-        $scope.setMapDiagramData = function (data, track_id) {
-            $scope.series = "asdasd";
-            for (var i = 0; i < data.length; i++) {
-                //console.log(String(track_id) + " " + data[i].toString())
-                $scope.labels[i] = data[i].timestamp//= ["January", "February", "March", "April", "May", "June", "July"];
-                //= ['Series A', 'Series B'];
-                $scope.data[i] = data[i].speed;
-                /*= [
-                 [65, 59, 80, 81, 56, 55, 40],
-                 [28, 48, 40, 19, 86, 27, 90]
-                 ];*/
-            }
-            $scope.onClick = function (points, evt) {
-                console.log(points, evt);
-            };
-            console.log("diagramData");
-        }
-        $scope.setMapDiagram = function () {
-            $scope.series = Map.track_id;
-            for (var i = 0; i < Map.tracking_data.length; i++) {
-                console.log(String(Map.track_id) + " " + Map.tracking_data[i].toString())
-                $scope.labels[i] = Map.tracking_data[i].timestamp//= ["January", "February", "March", "April", "May", "June", "July"];
-                //= ['Series A', 'Series B'];
-                $scope.data[i] = Map.tracking_data[i].speed;
-                /*= [
-                 [65, 59, 80, 81, 56, 55, 40],
-                 [28, 48, 40, 19, 86, 27, 90]
-                 ];*/
-            }
-            $scope.onClick = function (points, evt) {
-                console.log(points, evt);
-            };
-            console.log("diagram");
-            /*
-             $scope.labels= ["January", "February", "March", "April", "May", "June", "July"];
-             $scope.series= ['Series A', 'Series B'];
-             $scope.data = [
-             [65, 59, 80, 81, 56, 55, 40],
-             [28, 48, 40, 19, 86, 27, 90]
-             ];*/
+        $scope.setMapDiagramData = function (track_id,data) {
+
+
+            $scope.labels = [];
+            $scope.series = [];
+            $scope.data = [[1]];
+
+            $scope.labels.push("January");
+            $scope.labels.push("March");
+            $scope.labels.push("April");
+
+            $scope.series.push("Series A");
+           // $scope.series.push("Series B");
+            $scope.data[0][0]=32;
+            $scope.data[0][1]=32;
+            $scope.data[0][2]=32;
+
+
+
 
         };
+
 
 
     };

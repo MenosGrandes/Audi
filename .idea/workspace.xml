@@ -4,14 +4,8 @@
     <list default="true" id="7c716a92-4cfc-4bcb-99cb-0bf917735218" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/scripts/controller.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/scripts/controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/controller.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/history.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/history.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/history.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/history.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/index.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/index.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/map.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/map.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/css/style.css" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/css/style.css" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Audi.iws" />
@@ -33,17 +27,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="controller.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.111111">
-              <caret line="611" column="25" selection-start-line="611" selection-start-column="25" selection-end-line="611" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.7733333">
+              <caret line="626" column="33" selection-start-line="626" selection-start-column="33" selection-end-line="626" selection-end-column="33" />
               <folding>
-                <element signature="e#9744#10123#0" expanded="false" />
-                <element signature="e#10229#10681#0" expanded="false" />
-                <element signature="e#11458#11879#0" expanded="false" />
-                <element signature="e#11952#14164#0" expanded="false" />
-                <element signature="e#14205#14307#0" expanded="false" />
+                <element signature="e#27#2939#0" expanded="false" />
+                <element signature="e#2992#3491#0" expanded="false" />
+                <element signature="e#3493#4387#0" expanded="false" />
+                <element signature="e#4414#4461#0" expanded="false" />
+                <element signature="e#4483#4517#0" expanded="false" />
+                <element signature="e#4536#4600#0" expanded="false" />
+                <element signature="e#4614#6124#0" expanded="false" />
+                <element signature="e#6421#9394#0" expanded="false" />
+                <element signature="e#9745#10124#0" expanded="false" />
+                <element signature="e#10230#10682#0" expanded="false" />
+                <element signature="e#11477#11898#0" expanded="false" />
+                <element signature="e#14224#14326#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -59,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.749499">
-              <caret line="22" column="100" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="100" />
+            <state vertical-scroll-proportion="-7.056604">
+              <caret line="22" column="17" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -132,8 +133,8 @@
       <file leaf-file-name="map.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1698112">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.5660377">
+              <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#ons-page#0;n#ons-navigator#0;n#!!top" expanded="true" />
               </folding>
@@ -180,8 +181,8 @@
         <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/settings.html" />
         <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/css/style.css" />
         <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/styles/onsen-css-components-blue-theme.css" />
-        <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/index.html" />
         <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/history.html" />
+        <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/index.html" />
         <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/map.html" />
         <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/controller.js" />
       </list>
@@ -742,7 +743,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/controller.js</url>
+          <line>118</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -789,11 +797,18 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#9744#10123#0" expanded="false" />
-            <element signature="e#10229#10681#0" expanded="false" />
-            <element signature="e#11458#11879#0" expanded="false" />
-            <element signature="e#11952#14164#0" expanded="false" />
-            <element signature="e#14205#14307#0" expanded="false" />
+            <element signature="e#27#2939#0" expanded="false" />
+            <element signature="e#2992#3491#0" expanded="false" />
+            <element signature="e#3493#4387#0" expanded="false" />
+            <element signature="e#4414#4461#0" expanded="false" />
+            <element signature="e#4483#4517#0" expanded="false" />
+            <element signature="e#4536#4600#0" expanded="false" />
+            <element signature="e#4614#6124#0" expanded="false" />
+            <element signature="e#6421#9394#0" expanded="false" />
+            <element signature="e#9745#10124#0" expanded="false" />
+            <element signature="e#10230#10682#0" expanded="false" />
+            <element signature="e#11477#11898#0" expanded="false" />
+            <element signature="e#14224#14326#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -832,11 +847,18 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
           <folding>
-            <element signature="e#9744#10123#0" expanded="false" />
-            <element signature="e#10229#10681#0" expanded="false" />
-            <element signature="e#11458#11879#0" expanded="false" />
-            <element signature="e#11952#14164#0" expanded="false" />
-            <element signature="e#14205#14307#0" expanded="false" />
+            <element signature="e#27#2939#0" expanded="false" />
+            <element signature="e#2992#3491#0" expanded="false" />
+            <element signature="e#3493#4387#0" expanded="false" />
+            <element signature="e#4414#4461#0" expanded="false" />
+            <element signature="e#4483#4517#0" expanded="false" />
+            <element signature="e#4536#4600#0" expanded="false" />
+            <element signature="e#4614#6124#0" expanded="false" />
+            <element signature="e#6421#9394#0" expanded="false" />
+            <element signature="e#9745#10124#0" expanded="false" />
+            <element signature="e#10230#10682#0" expanded="false" />
+            <element signature="e#11477#11898#0" expanded="false" />
+            <element signature="e#14224#14326#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1112,10 +1134,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.056604">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1698112">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state vertical-scroll-proportion="-5.5660377">
+          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
           <folding>
             <element signature="n#style#0;n#div#1;n#ons-page#0;n#ons-navigator#0;n#!!top" expanded="true" />
           </folding>
@@ -1124,23 +1154,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.111111">
-          <caret line="611" column="25" selection-start-line="611" selection-start-column="25" selection-end-line="611" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.7733333">
+          <caret line="626" column="33" selection-start-line="626" selection-start-column="33" selection-end-line="626" selection-end-column="33" />
           <folding>
-            <element signature="e#9744#10123#0" expanded="false" />
-            <element signature="e#10229#10681#0" expanded="false" />
-            <element signature="e#11458#11879#0" expanded="false" />
-            <element signature="e#11952#14164#0" expanded="false" />
-            <element signature="e#14205#14307#0" expanded="false" />
+            <element signature="e#27#2939#0" expanded="false" />
+            <element signature="e#2992#3491#0" expanded="false" />
+            <element signature="e#3493#4387#0" expanded="false" />
+            <element signature="e#4414#4461#0" expanded="false" />
+            <element signature="e#4483#4517#0" expanded="false" />
+            <element signature="e#4536#4600#0" expanded="false" />
+            <element signature="e#4614#6124#0" expanded="false" />
+            <element signature="e#6421#9394#0" expanded="false" />
+            <element signature="e#9745#10124#0" expanded="false" />
+            <element signature="e#10230#10682#0" expanded="false" />
+            <element signature="e#11477#11898#0" expanded="false" />
+            <element signature="e#14224#14326#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.749499">
-          <caret line="22" column="100" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="100" />
-          <folding />
         </state>
       </provider>
     </entry>
