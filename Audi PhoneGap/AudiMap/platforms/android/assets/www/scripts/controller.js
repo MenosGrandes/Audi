@@ -482,13 +482,13 @@ var Calculations =
                 document.getElementById("pacmanAnimID").className = "";
 
 
+
                 var data = window.localStorage.getItem(theService.msg);
                 data = JSON.parse(data);
 
                 Map.calculateTotalKmFromData(data);
+                 //
                 $scope.setMapDiagramData(theService.msg,data);
-            
-
                 var myLatLng = new google.maps.LatLng(data[0].coords.latitude,
                     data[0].coords.longitude);
 
@@ -615,31 +615,41 @@ var Calculations =
 
             $scope.labels = [];
             $scope.series = [];
-            $scope.data = [[1],[1]];
+            $scope.data = [[1]];
 
-            $scope.series.push("track_id");
-/*
-            $scope.labels.push("January");
-            $scope.labels.push("March");
-            $scope.labels.push("April");
+           // $scope.labels.push("January");
+           // $scope.labels.push("March");
+           // $scope.labels.push("April");
+           //
+           // $scope.series.push("Series A");
+           //// $scope.series.push("Series B");
+           // $scope.data[0][0]=32;
+           // $scope.data[0][1]=32;
+           // $scope.data[0][2]=32;
 
-            $scope.series.push("Series A");
-            // $scope.series.push("Series B");
-            $scope.data[0][0]=32;
-            $scope.data[0][1]=32;;
-            $scope.data[0][2]=32;
-*/
+            $scope.series.push(track_id);
             for(var i=0;i<data.length;i++)
             {
-                $scope.labels(data.timestamp);
-                $scope.data[0][0]=32; // predkosc ktora musze obliczac.
+            //    var start_time = new Date(data[i].timestamp).getTime();
+            //
+            //    var hours = start_time.getHours();
+            //// minutes part from the timestamp
+            //    var minutes = "0" + start_time.getMinutes();
+            //        // seconds part from the timestamp
+            //    var seconds = "0" + start_time.getSeconds();
+            //    var formattedTime = hours + ':' + minutes.substr(minutes.length-2) + ':' + seconds.substr(seconds.length-2);
+            //
+            //    //var time=String(hourminut.getHours() + " : "+ hourminut.getMinutes());
+                var dataD=new Date(data[i].timestamp);
+                var hour=dataD.getHours();
+                var minutes =dataD.getMinutes();
+                var seconds =dataD.getSeconds();
+
+                console.log(hour + ":" +minutes+":"+seconds);
+                $scope.labels.push(hour + ":" +minutes+":"+seconds);
+                $scope.data[0][i]=32; //predkosc
             }
 
-
-
-            //$scope.data[1][0]=32;
-            //$scope.data[1][1]=32;;
-            //$scope.data[1][2]=32;
 
 
 

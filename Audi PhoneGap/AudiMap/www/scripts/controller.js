@@ -481,14 +481,14 @@ var Calculations =
                 document.getElementById("audiAnimID").className = "";
                 document.getElementById("pacmanAnimID").className = "";
 
-                $scope.setMapDiagramData();
-                /*
+
+
                 var data = window.localStorage.getItem(theService.msg);
                 data = JSON.parse(data);
 
                 Map.calculateTotalKmFromData(data);
                  //
-
+                $scope.setMapDiagramData(theService.msg,data);
                 var myLatLng = new google.maps.LatLng(data[0].coords.latitude,
                     data[0].coords.longitude);
 
@@ -523,7 +523,7 @@ var Calculations =
 
                 // Apply the line to the map
                 trackPath.setMap(Map.map);
-*/
+
             }
         };
 
@@ -617,15 +617,28 @@ var Calculations =
             $scope.series = [];
             $scope.data = [[1]];
 
-            $scope.labels.push("January");
-            $scope.labels.push("March");
-            $scope.labels.push("April");
+           // $scope.labels.push("January");
+           // $scope.labels.push("March");
+           // $scope.labels.push("April");
+           //
+           // $scope.series.push("Series A");
+           //// $scope.series.push("Series B");
+           // $scope.data[0][0]=32;
+           // $scope.data[0][1]=32;
+           // $scope.data[0][2]=32;
 
-            $scope.series.push("Series A");
-           // $scope.series.push("Series B");
-            $scope.data[0][0]=32;
-            $scope.data[0][1]=32;
-            $scope.data[0][2]=32;
+            $scope.series.push(track_id);
+            for(var i=0;i<data.length;i++)
+
+                var dataD=new Date(data[i].timestamp);
+                var hour=dataD.getHours();
+                var minutes =dataD.getMinutes();
+                var seconds =dataD.getSeconds();
+
+                console.log(hour + ":" +minutes+":"+seconds);
+                $scope.labels.push(hour + ":" +minutes+":"+seconds);
+                $scope.data[0][i]=32; //predkosc
+            }
 
 
 
