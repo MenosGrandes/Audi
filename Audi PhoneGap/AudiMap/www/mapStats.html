@@ -1,0 +1,19 @@
+<ons-navigator ng-controller="MapStatsController">
+    <ons-page ng-init="refreshfStatistics()" ng-device-backbutton="back()">
+        <ons-toolbar>
+            <div class="left">
+                <ons-toolbar-button ng-click="slidingMenu.toggleMenu()">
+                    <ons-icon icon="bars"></ons-icon>
+                </ons-toolbar-button>
+            </div>
+            <div class="center">Statistics</div>
+        </ons-toolbar>
+
+        <canvas id="line" class="chart chart-line" data="data"
+                labels="labels" legend="true" series="series"
+                >
+        </canvas>
+        <p id="burnedCalories">Burned calories :</p>
+    </ons-page>
+
+</ons-navigator>

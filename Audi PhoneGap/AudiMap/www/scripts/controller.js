@@ -252,11 +252,11 @@ var Calculations =
             met = this.R8_6mph
         }
         else if (speed >= this.MileforKm(8.6) && speed < this.MileforKm(9)) {
-            console.log("r9mph");
+            //console.log("r9mph");
             met = this.R9mph
         }
         else if (speed >= this.MileforKm(9) && speed < this.MileforKm(10)) {
-            console.log("R10mph");
+           // console.log("R10mph");
             met = this.R10mph
         }
         else if (speed >= this.MileforKm(10) && speed < this.MileforKm(11)) {
@@ -299,6 +299,15 @@ var Calculations =
         };
     });
 
+    app.factory('mapSettings', function () {
+        return {
+            msg: {
+                data: [],
+                track_id :0
+            }
+        };
+    });
+
     // Example of how to set default values for all dialogs
     app.config(['ngDialogProvider', function (ngDialogProvider) {
         ngDialogProvider.setDefaults({
@@ -333,16 +342,10 @@ var Calculations =
     };
 
 
-    var MapController = function ($scope, $timeout, theService, ngDialog, $http) {
+    var MapController = function ($scope, $timeout, theService, ngDialog, $http,mapSettings) {
 
         $scope.stateOfWorkout = -1;
-        //$scope.labels =[];// = ["January", "February", "March", "April", "May", "June", "July"];
-        //$scope.series =[];// = ['Series A', 'Series B'];
-        //$scope.data;//
-        ////= [
-        //// [65, 59, 80, 81, 56, 55, 40],
-        //// [28, 48, 40, 19, 86, 27, 90]
-        //// ];
+
 
         var tick = function () {
             Clock.calculateTimeDiff(2);  // get the current time
@@ -448,10 +451,6 @@ var Calculations =
         $scope.refreshMap = function () {
 
 
-            $scope.onClick = function (points, evt) {
-                console.log(points, evt);
-            };
-
             Clock.clocker("0:0:0", "clock");
             Clock.clocker(Map.tracking_status, "track_info_info");
 
@@ -472,7 +471,6 @@ var Calculations =
             HumanSizes.height = 165;
             HumanSizes.weight = 65;
 
-           // console.log("calculate " + Calculations.calculateBMR(1, 14));
 ///////////////////////////////////////////
             console.log("checkService id");
             if (theService.msg.id != 0) {
@@ -482,13 +480,11 @@ var Calculations =
                 document.getElementById("pacmanAnimID").className = "";
 
 
-
                 var data = window.localStorage.getItem(theService.msg);
                 data = JSON.parse(data);
 
                 Map.calculateTotalKmFromData(data);
-                 //
-                $scope.setMapDiagramData(theService.msg,data);
+                //
                 var myLatLng = new google.maps.LatLng(data[0].coords.latitude,
                     data[0].coords.longitude);
 
@@ -523,6 +519,9 @@ var Calculations =
 
                 // Apply the line to the map
                 trackPath.setMap(Map.map);
+
+                mapSettings.data=data;
+                mapSettings.track_id=theService.msg;
 
             }
         };
@@ -610,46 +609,14 @@ var Calculations =
 
         };
 
-        $scope.setMapDiagramData = function (track_id,data) {
 
-
-            $scope.labels = [];
-            $scope.series = [];
-            $scope.data = [[1]];
-
-           // $scope.labels.push("January");
-           // $scope.labels.push("March");
-           // $scope.labels.push("April");
-           //
-           // $scope.series.push("Series A");
-           //// $scope.series.push("Series B");
-           // $scope.data[0][0]=32;
-           // $scope.data[0][1]=32;
-           // $scope.data[0][2]=32;
-
-            $scope.series.push(track_id);
-            for(var i=0;i<data.length;i++)
-
-                var dataD=new Date(data[i].timestamp);
-                var hour=dataD.getHours();
-                var minutes =dataD.getMinutes();
-                var seconds =dataD.getSeconds();
-
-                console.log(hour + ":" +minutes+":"+seconds);
-                $scope.labels.push(hour + ":" +minutes+":"+seconds);
-                $scope.data[0][i]=32; //predkosc
-            }
-
-
-
-
+        $scope.clickedStats = function (event) {
+            slidingMenu.setMainPage('mapStats.html');
         };
-
-
 
     };
 
-    // app.controller('SettingsController', function ($scope) {
+// app.controller('SettingsController', function ($scope) {
     var SettingsController = function ($scope) {
 
         $scope.checkInternet = function () {
@@ -725,10 +692,100 @@ var Calculations =
 
     };
 
+    var MapStatsController = function ($scope, mapSettings) {
 
+        $scope.back = function () {
+            slidingMenu.setMainPage('map.html');
+
+        }
+
+
+        $scope.refreshfStatistics = function () {
+
+
+
+
+            var start_time = new Date(mapSettings.data[0].timestamp).getTime();
+            var end_time = new Date(mapSettings.data[mapSettings.data.length - 1].timestamp).getTime();
+
+            var timeDiff2 = start_time.getTime() - end_time.getTime();
+
+            var daysDifference2 = Math.floor(timeDiff2 / 1000 / 60 / 60 / 24);
+            timeDiff2 -= daysDifference2 * 1000 * 60 * 60 * 24
+
+            var hoursDifference2 = Math.floor(timeDiff2 / 1000 / 60 / 60);
+            timeDiff2 -= hoursDifference2 * 1000 * 60 * 60
+
+
+            var calories= Calculations.calculateBMR(hoursDifference2,7);//Map.tracking_status/hoursDifference2);
+            document.getElementById("burnedCalories").innerHTML=String("Burned calories :"+ calories);
+
+            $scope.labels = [];
+            $scope.series = [];
+            $scope.data = [[1]];
+
+            // $scope.labels.push("January");
+            // $scope.labels.push("March");
+            // $scope.labels.push("April");
+            //
+            // $scope.series.push("Series A");
+            //// $scope.series.push("Series B");
+            // $scope.data[0][0]=32;
+            // $scope.data[0][1]=32;
+            // $scope.data[0][2]=32;
+            var percent = mapSettings.data.length / (mapSettings.data.length * 0.1);
+
+            $scope.series.push(mapSettings.track_id);
+            for (var i = 0; i < mapSettings.data.length; i += percent) {
+                var dataD = new Date(mapSettings.data[i].timestamp);
+                var hour = dataD.getHours();
+                var minutes = dataD.getMinutes();
+                var seconds = dataD.getSeconds();
+
+                console.log(hour + ":" + minutes + ":" + seconds);
+                $scope.labels.push(hour + ":" + minutes + ":" + seconds);
+                if (mapSettings.data[i + percent] != null) {
+
+                    var date2 = new Date(mapSettings.data[i + percent].timestamp);
+
+                    var timeDiff = dataD.getTime() - date2.getTime();
+
+                    var daysDifference = Math.floor(timeDiff / 1000 / 60 / 60 / 24);
+                    timeDiff -= daysDifference * 1000 * 60 * 60 * 24
+
+                    var hoursDifference = Math.floor(timeDiff / 1000 / 60 / 60);
+                    timeDiff -= hoursDifference * 1000 * 60 * 60
+
+                    var minutesDifference = Math.floor(timeDiff / 1000 / 60);
+                    timeDiff -= minutesDifference * 1000 * 60
+
+                    var secondsDifference = Math.floor(timeDiff / 1000);
+
+
+                    var distance = Map.gps_distance(
+                        mapSettings.data[i].coords.latitude,
+                        mapSettings.data[i].coords.longitude,
+                        mapSettings.data[i + percent].coords.latitude,
+                        mapSettings.data[i + percent].coords.longitude);
+                        distance *= 1000; //zamiana na metry
+
+                    var speed = distance / secondsDifference;
+                    $scope.data[0][i] = speed; //predkosc
+                    console.log("speed :"+speed);
+                    console.log("distance :"+distance);
+                    console.log("secondsDifference :"+secondsDifference);
+                }
+
+
+            }
+
+        };
+    };
+    app.controller('MapStatsController', MapStatsController);
     app.controller('HistoryController', HistoryController);
     app.controller('SettingsController', SettingsController);
     app.controller('MapController', MapController);
     app.controller('SlidingMenuController', SlidingMenuController);
 
-})();
+})
+();

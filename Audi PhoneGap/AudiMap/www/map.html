@@ -35,6 +35,10 @@
             <ons-button id="btn-showQuestion" ng-click="openNotify($event)">
                 Show Question
             </ons-button>
+
+            <ons-button id="btn-showStats" ng-click="clickedStats()">
+                Show Stats
+            </ons-button>
         </p>
         <div style="width: 100%; overflow: hidden;">
 
@@ -42,11 +46,6 @@
             <div id="pacmanAnimID"></div>
 
         </div>
-        <canvas id="line" class="chart chart-line" data="data"
-                labels="labels" legend="true" series="series"
-                click="onClick">
-        </canvas>
-
 
     </ons-page>
 
