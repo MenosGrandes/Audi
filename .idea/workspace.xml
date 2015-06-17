@@ -2,13 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c716a92-4cfc-4bcb-99cb-0bf917735218" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/mapStats.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/AngularChart/angular-chart.js/dist/angular-chart.css" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/AngularChart/angular-chart.js/dist/angular-chart.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular-chart.js/dist/angular-chart.css" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular-chart.js/dist/angular-chart.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/buzz.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.device-motion/www/Acceleration.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.device-motion/www/Acceleration.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/AndroidManifest.xml" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.device-orientation/www/CompassError.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.device-orientation/www/CompassError.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.device-orientation/www/CompassHeading.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.device-orientation/www/CompassHeading.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.network-information/www/Connection.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.network-information/www/Connection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.geolocation/www/Coordinates.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.geolocation/www/Coordinates.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.geolocation/www/Position.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.geolocation/www/Position.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.geolocation/www/PositionError.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.geolocation/www/PositionError.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.device-motion/www/accelerometer.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.device-motion/www/accelerometer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/plugins/android.json" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/plugins/android.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.device-orientation/www/compass.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.device-orientation/www/compass.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/res/xml/config.xml" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/res/xml/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/AudiMap/config.xml" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/AudiMap/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/scripts/controller.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/scripts/controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/controller.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/cordova_plugins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/cordova_plugins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/plugins/fetch.json" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/plugins/fetch.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.geolocation/www/geolocation.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.geolocation/www/geolocation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/index.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/index.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/plugins/ios.json" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/plugins/ios.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/map.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/map.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/map.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/map.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.network-information/www/network.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.network-information/www/network.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.dialogs/www/notification.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.dialogs/www/notification.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/AudiMap.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/AudiMap.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/question.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/question.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/question.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/question.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/settings.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/settings.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/settings.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/settings.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.vibration/www/vibration.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/plugins/org.apache.cordova.vibration/www/vibration.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Audi.iws" />
@@ -33,46 +59,46 @@
       <file leaf-file-name="controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6571429">
-              <caret line="719" column="72" selection-start-line="719" selection-start-column="72" selection-end-line="719" selection-end-column="72" />
+            <state vertical-scroll-proportion="-1.1353997">
+              <caret line="646" column="6" selection-start-line="646" selection-start-column="6" selection-end-line="646" selection-end-column="6" />
               <folding>
-                <element signature="e#2992#3491#0" expanded="false" />
-                <element signature="e#3493#4387#0" expanded="false" />
-                <element signature="e#4414#4461#0" expanded="false" />
-                <element signature="e#4483#4517#0" expanded="false" />
-                <element signature="e#4536#4600#0" expanded="false" />
-                <element signature="e#4614#6124#0" expanded="false" />
-                <element signature="e#9918#10297#0" expanded="false" />
-                <element signature="e#10403#10855#0" expanded="false" />
-                <element signature="e#11024#11290#0" expanded="false" />
-                <element signature="e#11363#11784#0" expanded="false" />
-                <element signature="e#11857#14069#0" expanded="false" />
-                <element signature="e#14110#14212#0" expanded="false" />
-                <element signature="e#18523#19021#0" expanded="false" />
-                <element signature="e#19065#19806#0" expanded="false" />
-                <element signature="e#20040#21221#0" expanded="false" />
-                <element signature="e#21292#22507#0" expanded="false" />
+                <element signature="e#27#2943#0" expanded="false" />
+                <element signature="e#2996#3495#0" expanded="false" />
+                <element signature="e#3497#4391#0" expanded="false" />
+                <element signature="e#4418#4465#0" expanded="false" />
+                <element signature="e#4487#4521#0" expanded="false" />
+                <element signature="e#4540#4608#0" expanded="false" />
+                <element signature="e#4622#6132#0" expanded="false" />
+                <element signature="e#7101#9418#0" expanded="false" />
+                <element signature="e#9941#10320#0" expanded="false" />
+                <element signature="e#10426#10878#0" expanded="false" />
+                <element signature="e#14536#14638#0" expanded="false" />
+                <element signature="e#14681#17368#0" expanded="false" />
+                <element signature="e#22692#23907#0" expanded="false" />
+                <element signature="e#23970#27374#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="angular-chart.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular-chart.js/dist/angular-chart.css">
+      <file leaf-file-name="settings.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/settings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+            <state vertical-scroll-proportion="-17.0">
+              <caret line="26" column="63" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="angular-csp.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular/angular-csp.css">
+      <file leaf-file-name="map.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="-13.692307">
+              <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#ons-page#0;n#ons-navigator#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,41 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ngDialog.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/css/ngDialog.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.076923">
-              <caret line="22" column="17" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="history.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/history.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="question.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/question.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1923075">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state vertical-scroll-proportion="-13.423077">
+              <caret line="23" column="30" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -137,14 +133,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/map.html">
+      <file leaf-file-name="history.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/history.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.692307">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#ons-page#0;n#ons-navigator#0;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-11.115385">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="question.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/question.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.461538">
+              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -182,17 +186,18 @@
         <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/styles/externalTemplate.html" />
         <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/css/ngDialog-custom-width.css" />
         <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/css/ngDialog-theme-plain.css" />
-        <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/question.html" />
         <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/styles/app.css" />
         <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/chart-angular-js/Chart.min.js" />
-        <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/settings.html" />
         <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/css/style.css" />
         <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/styles/onsen-css-components-blue-theme.css" />
         <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/history.html" />
-        <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/index.html" />
         <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/AngularChart/angular-chart.js/dist/angular-chart.css" />
         <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/mapStats.html" />
+        <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/buzz.min.js" />
+        <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/question.html" />
         <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/map.html" />
+        <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/index.html" />
+        <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/settings.html" />
         <option value="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/controller.js" />
       </list>
     </option>
@@ -234,7 +239,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -297,310 +301,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi PhoneGap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AudiMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi PhoneGap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AudiMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi PhoneGap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AudiMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="json" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi PhoneGap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AudiMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi PhoneGap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AudiMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi PhoneGap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AudiMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi PhoneGap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AudiMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi PhoneGap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AudiMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularChart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi PhoneGap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AudiMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularChart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular-chart.js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi PhoneGap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AudiMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularChart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular-chart.js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Audi PhoneGap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AudiMap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AngularChart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -620,11 +323,11 @@
       <recent name="C:\Users\Filip\Git\Audi\Totalnie nowy DZIAŁAJĄCY ale nie mów\hello\www" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\www\AngularChart" />
+      <recent name="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\www\sounds" />
       <recent name="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\www" />
-      <recent name="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\www\chart-angular-js" />
-      <recent name="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\www\components\chart-angular-js" />
-      <recent name="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\www\images" />
+      <recent name="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap" />
+      <recent name="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\www\scripts" />
+      <recent name="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\www\AngularChart" />
     </key>
   </component>
   <component name="RunManager">
@@ -741,8 +444,9 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2569546" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.114854515" sideWeight="0.51756954" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.02143951" sideWeight="0.5204978" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.02143951" sideWeight="0.4795022" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.114854515" sideWeight="0.4941435" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -755,7 +459,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.02143951" sideWeight="0.48243046" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -788,19 +491,17 @@
           <line>118</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/controller.js</url>
+          <line>130</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/lib/onsen/js/onsenui_all.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38373" column="23" selection-start-line="38373" selection-start-column="23" selection-end-line="38373" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -814,22 +515,20 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2992#3491#0" expanded="false" />
-            <element signature="e#3493#4387#0" expanded="false" />
-            <element signature="e#4414#4461#0" expanded="false" />
-            <element signature="e#4483#4517#0" expanded="false" />
-            <element signature="e#4536#4600#0" expanded="false" />
-            <element signature="e#4614#6124#0" expanded="false" />
-            <element signature="e#9918#10297#0" expanded="false" />
-            <element signature="e#10403#10855#0" expanded="false" />
-            <element signature="e#11024#11290#0" expanded="false" />
-            <element signature="e#11363#11784#0" expanded="false" />
-            <element signature="e#11857#14069#0" expanded="false" />
-            <element signature="e#14110#14212#0" expanded="false" />
-            <element signature="e#18523#19021#0" expanded="false" />
-            <element signature="e#19065#19806#0" expanded="false" />
-            <element signature="e#20040#21221#0" expanded="false" />
-            <element signature="e#21292#22507#0" expanded="false" />
+            <element signature="e#27#2943#0" expanded="false" />
+            <element signature="e#2996#3495#0" expanded="false" />
+            <element signature="e#3497#4391#0" expanded="false" />
+            <element signature="e#4418#4465#0" expanded="false" />
+            <element signature="e#4487#4521#0" expanded="false" />
+            <element signature="e#4540#4608#0" expanded="false" />
+            <element signature="e#4622#6132#0" expanded="false" />
+            <element signature="e#7101#9418#0" expanded="false" />
+            <element signature="e#9941#10320#0" expanded="false" />
+            <element signature="e#10426#10878#0" expanded="false" />
+            <element signature="e#14536#14638#0" expanded="false" />
+            <element signature="e#14681#17368#0" expanded="false" />
+            <element signature="e#22692#23907#0" expanded="false" />
+            <element signature="e#23970#27374#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -868,22 +567,20 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
           <folding>
-            <element signature="e#2992#3491#0" expanded="false" />
-            <element signature="e#3493#4387#0" expanded="false" />
-            <element signature="e#4414#4461#0" expanded="false" />
-            <element signature="e#4483#4517#0" expanded="false" />
-            <element signature="e#4536#4600#0" expanded="false" />
-            <element signature="e#4614#6124#0" expanded="false" />
-            <element signature="e#9918#10297#0" expanded="false" />
-            <element signature="e#10403#10855#0" expanded="false" />
-            <element signature="e#11024#11290#0" expanded="false" />
-            <element signature="e#11363#11784#0" expanded="false" />
-            <element signature="e#11857#14069#0" expanded="false" />
-            <element signature="e#14110#14212#0" expanded="false" />
-            <element signature="e#18523#19021#0" expanded="false" />
-            <element signature="e#19065#19806#0" expanded="false" />
-            <element signature="e#20040#21221#0" expanded="false" />
-            <element signature="e#21292#22507#0" expanded="false" />
+            <element signature="e#27#2943#0" expanded="false" />
+            <element signature="e#2996#3495#0" expanded="false" />
+            <element signature="e#3497#4391#0" expanded="false" />
+            <element signature="e#4418#4465#0" expanded="false" />
+            <element signature="e#4487#4521#0" expanded="false" />
+            <element signature="e#4540#4608#0" expanded="false" />
+            <element signature="e#4622#6132#0" expanded="false" />
+            <element signature="e#7101#9418#0" expanded="false" />
+            <element signature="e#9941#10320#0" expanded="false" />
+            <element signature="e#10426#10878#0" expanded="false" />
+            <element signature="e#14536#14638#0" expanded="false" />
+            <element signature="e#14681#17368#0" expanded="false" />
+            <element signature="e#22692#23907#0" expanded="false" />
+            <element signature="e#23970#27374#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -993,20 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/css/ngDialog-theme-plain.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/json/quizNew.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/images/rmanAnim.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1057,7 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1081,7 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1089,7 +770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1101,19 +781,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/settings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/components/loader.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="63" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1129,38 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/history.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/question.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.076923">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1181,13 +820,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/map.html">
+    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/buzz.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.692307">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#ons-page#0;n#ons-navigator#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/css/ngDialog-theme-plain.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.074074">
+          <caret line="37" column="42" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/json/quizNew.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1199,27 +852,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/question.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/history.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.692307">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#ons-page#0;n#ons-navigator#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.423077">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.0">
+          <caret line="26" column="63" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6571429">
-          <caret line="719" column="72" selection-start-line="719" selection-start-column="72" selection-end-line="719" selection-end-column="72" />
+        <state vertical-scroll-proportion="-1.1353997">
+          <caret line="646" column="6" selection-start-line="646" selection-start-column="6" selection-end-line="646" selection-end-column="6" />
           <folding>
-            <element signature="e#2992#3491#0" expanded="false" />
-            <element signature="e#3493#4387#0" expanded="false" />
-            <element signature="e#4414#4461#0" expanded="false" />
-            <element signature="e#4483#4517#0" expanded="false" />
-            <element signature="e#4536#4600#0" expanded="false" />
-            <element signature="e#4614#6124#0" expanded="false" />
-            <element signature="e#9918#10297#0" expanded="false" />
-            <element signature="e#10403#10855#0" expanded="false" />
-            <element signature="e#11024#11290#0" expanded="false" />
-            <element signature="e#11363#11784#0" expanded="false" />
-            <element signature="e#11857#14069#0" expanded="false" />
-            <element signature="e#14110#14212#0" expanded="false" />
-            <element signature="e#18523#19021#0" expanded="false" />
-            <element signature="e#19065#19806#0" expanded="false" />
-            <element signature="e#20040#21221#0" expanded="false" />
-            <element signature="e#21292#22507#0" expanded="false" />
+            <element signature="e#27#2943#0" expanded="false" />
+            <element signature="e#2996#3495#0" expanded="false" />
+            <element signature="e#3497#4391#0" expanded="false" />
+            <element signature="e#4418#4465#0" expanded="false" />
+            <element signature="e#4487#4521#0" expanded="false" />
+            <element signature="e#4540#4608#0" expanded="false" />
+            <element signature="e#4622#6132#0" expanded="false" />
+            <element signature="e#7101#9418#0" expanded="false" />
+            <element signature="e#9941#10320#0" expanded="false" />
+            <element signature="e#10426#10878#0" expanded="false" />
+            <element signature="e#14536#14638#0" expanded="false" />
+            <element signature="e#14681#17368#0" expanded="false" />
+            <element signature="e#22692#23907#0" expanded="false" />
+            <element signature="e#23970#27374#0" expanded="false" />
           </folding>
         </state>
       </provider>

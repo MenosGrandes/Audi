@@ -54,7 +54,7 @@ var Map = {
                 if (i == (data.length - 1)) {
                     break;
                 }
-                total_km += Map.gps_distance(data[i].coords.latitude,
+                Map.total_km += Map.gps_distance(data[i].coords.latitude,
                     data[i].coords.longitude, data[i + 1].coords.latitude,
                     data[i + 1].coords.longitude);
             }
@@ -129,9 +129,9 @@ var WORKOUT_STATE =
 };
 var HumanSizes =
 {
-    weight: 0,
-    height: 0,
-    age: 0,
+    weight: 90,
+    height: 180,
+    age: 21,
     gender: "male"
 };
 var Clock =
@@ -183,7 +183,9 @@ var Clock =
 
     }
 };
-var Audi = {};
+var Audi = {
+    BPM : 50
+};
 var PacMan = {};
 /*http://www.shapesense.com/fitness-exercise/calculators/activity-based-calorie-burn-calculator.aspx
  https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxjb21wZW5kaXVtb2ZwaHlzaWNhbGFjdGl2aXRpZXN8Z3g6NmNhZWIwM2FjZjhkMzcxMQ
@@ -256,7 +258,7 @@ var Calculations =
             met = this.R9mph
         }
         else if (speed >= this.MileforKm(9) && speed < this.MileforKm(10)) {
-           // console.log("R10mph");
+            // console.log("R10mph");
             met = this.R10mph
         }
         else if (speed >= this.MileforKm(10) && speed < this.MileforKm(11)) {
@@ -303,7 +305,7 @@ var Calculations =
         return {
             msg: {
                 data: [],
-                track_id :0
+                track_id: 0
             }
         };
     });
@@ -342,7 +344,7 @@ var Calculations =
     };
 
 
-    var MapController = function ($scope, $timeout, theService, ngDialog, $http,mapSettings) {
+    var MapController = function ($scope, $timeout, theService, ngDialog, $http, mapSettings) {
 
         $scope.stateOfWorkout = -1;
 
@@ -392,23 +394,6 @@ var Calculations =
                 $scope.C = String(data[x].c);
                 $scope.ans = String(data[x].odp);
 
-                $scope.iconA = "ion-close-round";
-                $scope.iconB = "ion-close-round";
-                $scope.iconC = "ion-close-round";
-                switch ($scope.ans) {
-                    case 'a':
-                        $scope.iconA = "ion-checkmark-round";
-                        console.log("a");
-                        break;
-                    case 'b':
-                        $scope.iconB = "ion-checkmark-round";
-                        console.log("b");
-                        break;
-                    case 'c':
-                        $scope.iconC = "ion-checkmark-round";
-                        //console.log("c");
-                        break;
-                }
 
             });
 
@@ -432,7 +417,24 @@ var Calculations =
                         Question.points++;
 
                     }
+                    switch ($scope.ans) {
+                        case 'a':
+                            document.getElementById("btn-A").style.backgroundColor = "green";
+                            document.getElementById("btn-B").style.backgroundColor = "red";
+                            document.getElementById("btn-C").style.backgroundColor = "red";
 
+                            break;
+                        case 'b':
+                            document.getElementById("btn-A").style.backgroundColor = "red";
+                            document.getElementById("btn-B").style.backgroundColor = "green";
+                            document.getElementById("btn-C").style.backgroundColor = "red";
+                            break;
+                        case 'c':
+                            document.getElementById("btn-A").style.backgroundColor = "red";
+                            document.getElementById("btn-B").style.backgroundColor = "red";
+                            document.getElementById("btn-C").style.backgroundColor = "green";
+                            break;
+                    }
                     $scope.isAns = false;
 
                     $timeout(dialog.close, 2000);
@@ -476,8 +478,8 @@ var Calculations =
             if (theService.msg.id != 0) {
 
 
-                document.getElementById("audiAnimID").className = "";
-                document.getElementById("pacmanAnimID").className = "";
+                //document.getElementById("audiAnimID").className = "";
+                //document.getElementById("pacmanAnimID").className = "";
 
 
                 var data = window.localStorage.getItem(theService.msg);
@@ -520,8 +522,8 @@ var Calculations =
                 // Apply the line to the map
                 trackPath.setMap(Map.map);
 
-                mapSettings.data=data;
-                mapSettings.track_id=theService.msg;
+                mapSettings.data = data;
+                mapSettings.track_id = theService.msg;
 
             }
         };
@@ -563,10 +565,10 @@ var Calculations =
             Map.track_id = date + " " + h + ":" + m + ":" + s;
             document.getElementById("trackingStatus").innerHTML = String("Tracking workout: <strong> <br>"
                 + Map.track_id + "</strong>");
-
-            document.getElementById("audiAnimID").className = "audiAnim";
-            document.getElementById("pacmanAnimID").className = "pacmanAnim";
-            document.getElementById("audiAnimID").style.float = "right";
+            //
+            //document.getElementById("audiAnimID").className = "audiAnim";
+            //document.getElementById("pacmanAnimID").className = "pacmanAnim";
+            //document.getElementById("audiAnimID").style.float = "right";
 
             // $timeout($scope.Animate, 2000);
 
@@ -616,9 +618,41 @@ var Calculations =
 
     };
 
-// app.controller('SettingsController', function ($scope) {
-    var SettingsController = function ($scope) {
+    function HumanSizeWatcher($scope) {
 
+
+        $scope.$watch("myAgeModel", function(newValue, oldValue) {
+            HumanSizes.age=$scope.myAgeModel;
+            //console.log( HumanSizes.age)
+        });
+        $scope.$watch("myHeightModel", function(newValue, oldValue) {
+            HumanSizes.height=$scope.myHeightModel;
+            //console.log( HumanSizes.height)
+
+        });
+        $scope.$watch("myWeightModel", function(newValue, oldValue) {
+            HumanSizes.weight=$scope.myWeightModel;
+            //console.log( HumanSizes.weight)
+
+        });
+        $scope.$watch("BPMModel", function(newValue, oldValue) {
+            $scope.BPM=String("BPS: "+$scope.BPMModel);
+            Audi.BPM=$scope.BPMModel;
+            console.log( Audi.BPM);
+
+        });
+
+
+    };
+    var SettingsController = function ($scope) {
+    $scope.init=function()
+    {
+        $scope.myAgeModel= HumanSizes.age;
+        $scope.myHeightModel= HumanSizes.height;
+        $scope.myWeightModel= HumanSizes.weight;
+        $scope.BMP="BPS: "+Audi.BPM;
+
+    }
         $scope.checkInternet = function () {
             var content = document.getElementById("button_Internet");
 
@@ -703,8 +737,6 @@ var Calculations =
         $scope.refreshfStatistics = function () {
 
 
-
-
             var start_time = new Date(mapSettings.data[0].timestamp).getTime();
             var end_time = new Date(mapSettings.data[mapSettings.data.length - 1].timestamp).getTime();
 
@@ -717,8 +749,8 @@ var Calculations =
             timeDiff2 -= hoursDifference2 * 1000 * 60 * 60
 
 
-            var calories= Calculations.calculateBMR(hoursDifference2,7);//Map.tracking_status/hoursDifference2);
-            document.getElementById("burnedCalories").innerHTML=String("Burned calories :"+ calories);
+            var calories = Calculations.calculateBMR(hoursDifference2, 7);//Map.tracking_status/hoursDifference2);
+            document.getElementById("burnedCalories").innerHTML = String("Burned calories :" + calories);
 
             $scope.labels = [];
             $scope.series = [];
@@ -767,13 +799,13 @@ var Calculations =
                         mapSettings.data[i].coords.longitude,
                         mapSettings.data[i + percent].coords.latitude,
                         mapSettings.data[i + percent].coords.longitude);
-                        distance *= 1000; //zamiana na metry
+                    distance *= 1000; //zamiana na metry
 
                     var speed = distance / secondsDifference;
                     $scope.data[0][i] = speed; //predkosc
-                    console.log("speed :"+speed);
-                    console.log("distance :"+distance);
-                    console.log("secondsDifference :"+secondsDifference);
+                    console.log("speed :" + speed);
+                    console.log("distance :" + distance);
+                    console.log("secondsDifference :" + secondsDifference);
                 }
 
 
@@ -781,11 +813,40 @@ var Calculations =
 
         };
     };
+    var MetronomeController = function($scope,$timeout)
+    {
+
+        $scope.isPlaying=false;
+
+
+        $scope.playMusic = function()
+         {
+
+             navigator.notification.vibrate(100);
+                 $scope.timer=$timeout($scope.playMusic,1000/Audi.BPM);
+
+
+         }
+        $scope.stopMusic = function()
+        {
+
+            $timeout.cancel($scope.timer);
+        }
+
+
+
+
+    };
+    app.controller('HumanSizeWatcher', HumanSizeWatcher);
+    app.controller('MetronomeController', MetronomeController);
     app.controller('MapStatsController', MapStatsController);
     app.controller('HistoryController', HistoryController);
     app.controller('SettingsController', SettingsController);
     app.controller('MapController', MapController);
     app.controller('SlidingMenuController', SlidingMenuController);
+
+
+
 
 })
 ();

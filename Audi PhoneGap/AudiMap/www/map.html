@@ -39,13 +39,24 @@
             <ons-button id="btn-showStats" ng-click="clickedStats()">
                 Show Stats
             </ons-button>
+            <br><br>
+            <div ng-controller="MetronomeController">
+            <ons-button  id="btn-playMusic" ng-click="playMusic()">
+                Play music
+            </ons-button>
+            <ons-button  id="btn-stopMusic" ng-click="stopMusic()">
+            Stop music
+             </ons-button>
+
+    </div>
+
         </p>
-        <div style="width: 100%; overflow: hidden;">
+        <!--<div style="width: 100%; overflow: hidden;">-->
 
-            <div id="audiAnimID"></div>
-            <div id="pacmanAnimID"></div>
+            <!--<div id="audiAnimID"></div>-->
+            <!--<div id="pacmanAnimID"></div>-->
 
-        </div>
+        <!--</div>-->
 
     </ons-page>
 

@@ -1,5 +1,5 @@
 <ons-navigator ng-controller="SettingsController">
-    <ons-page>
+    <ons-page ng-init="init()">
         <ons-toolbar>
             <div class="left">
                 <ons-toolbar-button ng-click="slidingMenu.toggleMenu()">
@@ -16,28 +16,25 @@
             <br>
             <button class="button button--large" id="button_ClearHistory" ng-click="clearHistory()">Clear History
             </button>
-            <div style="text-align: center">
+            <div ng-controller="HumanSizeWatcher">
             <br>
-            <label >Weight </label><input type="number" class="text-input" id="myWeight" >
+            <label >Weight </label><br><input type="number" class="text-input" id="myWeight" ng-model="myWeightModel"  >
             <br>
-            <label >myHeight </label><input type="number" class="text-input" id="myHeight" >
+            <label >Height </label><br><input type="number" class="text-input" id="myHeight" ng-model="myHeightModel" >
             <br>
-            <label >myAge </label><input type="number" class="text-input" id="myAge" >
+            <label >Age </label><br><input type="number" ng-model="myAgeModel" class="text-input" id="myAge" >
+                <br>
+            <label>{{BPM}}</label><br><input ng-model="BPMModel" type="range" class="range"  id="BPM" min=0 max=150 >
+
             </div>
-            <!--
-                        <ul class="list">
-                            <li class="list__item">
-                                Questions
-                                <label class="switch switch--list-item" >
-                                    <type="checkbox"    id="questionOnOff"  class="switch__input" checked="checked"  onchange="switchForQuestions()">
-                                    <div class="switch__toggle" ></div>
-                                </label>
-                            </li>
-                        </ul>
-            -->
+
 
 
         </div>
+
+
+
+
 
     </ons-page>
 
