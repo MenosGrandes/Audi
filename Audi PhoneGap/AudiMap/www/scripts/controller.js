@@ -184,7 +184,7 @@ var Clock =
     }
 };
 var Audi = {
-    BPM : 50
+    BPM: 50
 };
 var PacMan = {};
 /*http://www.shapesense.com/fitness-exercise/calculators/activity-based-calorie-burn-calculator.aspx
@@ -285,6 +285,10 @@ var Calculations =
         }
         //man
         else {
+            console.log("hw "+HumanSizes.weight +" h h " +HumanSizes.height + " ha "+ HumanSizes.age);
+            console.log("met "+met);
+            console.log("time "+time);
+
             bmr = (13.75 * HumanSizes.weight) + (5 * HumanSizes.height) - (6.76 * HumanSizes.age) + 665;
         }
         return ((bmr / 24) * met * time)
@@ -467,13 +471,7 @@ var Calculations =
                 document.getElementById("trackingStatus").innerHTML = String("Date: <strong> <br>"
                     + today.toDateString() + "</strong>");
             }
-///////////////////////////////////////////
-            HumanSizes.age = 21;
-            HumanSizes.gender = "female";
-            HumanSizes.height = 165;
-            HumanSizes.weight = 65;
 
-///////////////////////////////////////////
             console.log("checkService id");
             if (theService.msg.id != 0) {
 
@@ -621,24 +619,24 @@ var Calculations =
     function HumanSizeWatcher($scope) {
 
 
-        $scope.$watch("myAgeModel", function(newValue, oldValue) {
-            HumanSizes.age=$scope.myAgeModel;
+        $scope.$watch("myAgeModel", function (newValue, oldValue) {
+            HumanSizes.age = $scope.myAgeModel;
             //console.log( HumanSizes.age)
         });
-        $scope.$watch("myHeightModel", function(newValue, oldValue) {
-            HumanSizes.height=$scope.myHeightModel;
+        $scope.$watch("myHeightModel", function (newValue, oldValue) {
+            HumanSizes.height = $scope.myHeightModel;
             //console.log( HumanSizes.height)
 
         });
-        $scope.$watch("myWeightModel", function(newValue, oldValue) {
-            HumanSizes.weight=$scope.myWeightModel;
+        $scope.$watch("myWeightModel", function (newValue, oldValue) {
+            HumanSizes.weight = $scope.myWeightModel;
             //console.log( HumanSizes.weight)
 
         });
-        $scope.$watch("BPMModel", function(newValue, oldValue) {
+        $scope.$watch("BPMModel", function (newValue, oldValue) {
 
-            $scope.BPM="BPS: "+$scope.BPMModel;
-            Audi.BPM=$scope.BPMModel;
+            $scope.BPM = "BPS: " + $scope.BPMModel;
+            Audi.BPM = $scope.BPMModel;
             //console.log( HumanSizes.weight)
 
         });
@@ -646,14 +644,13 @@ var Calculations =
 
     };
     var SettingsController = function ($scope) {
-    $scope.init=function()
-    {
-        $scope.myAgeModel= HumanSizes.age;
-        $scope.myHeightModel= HumanSizes.height;
-        $scope.myWeightModel= HumanSizes.weight;
-        $scope.BPMModel=Audi.BPM;
+        $scope.init = function () {
+            $scope.myAgeModel = HumanSizes.age;
+            $scope.myHeightModel = HumanSizes.height;
+            $scope.myWeightModel = HumanSizes.weight;
+            $scope.BPMModel = Audi.BPM;
 
-    }
+        }
         $scope.checkInternet = function () {
             var content = document.getElementById("button_Internet");
 
@@ -737,11 +734,12 @@ var Calculations =
 
         $scope.refreshfStatistics = function () {
 
-
+            console.log("map length " + mapSettings.data[0].timestamp);
+            //calculate time
             var start_time = new Date(mapSettings.data[0].timestamp).getTime();
             var end_time = new Date(mapSettings.data[mapSettings.data.length - 1].timestamp).getTime();
 
-            var timeDiff2 = start_time.getTime() - end_time.getTime();
+            var timeDiff2 = start_time - end_time;
 
             var daysDifference2 = Math.floor(timeDiff2 / 1000 / 60 / 60 / 24);
             timeDiff2 -= daysDifference2 * 1000 * 60 * 60 * 24
@@ -749,26 +747,19 @@ var Calculations =
             var hoursDifference2 = Math.floor(timeDiff2 / 1000 / 60 / 60);
             timeDiff2 -= hoursDifference2 * 1000 * 60 * 60
 
-
-            var calories = Calculations.calculateBMR(hoursDifference2, 7);//Map.tracking_status/hoursDifference2);
+            //calculate calories
+            var calories = Calculations.calculateBMR(hoursDifference2,Map.total_km/hoursDifference2);
             document.getElementById("burnedCalories").innerHTML = String("Burned calories :" + calories);
 
             $scope.labels = [];
             $scope.series = [];
             $scope.data = [[1]];
-
-            // $scope.labels.push("January");
-            // $scope.labels.push("March");
-            // $scope.labels.push("April");
-            //
-            // $scope.series.push("Series A");
-            //// $scope.series.push("Series B");
-            // $scope.data[0][0]=32;
-            // $scope.data[0][1]=32;
-            // $scope.data[0][2]=32;
+//calculate how much points will be in diagram
             var percent = mapSettings.data.length / (mapSettings.data.length * 0.1);
-
+//add seres
             $scope.series.push(mapSettings.track_id);
+
+            //add every point from data
             for (var i = 0; i < mapSettings.data.length; i += percent) {
                 var dataD = new Date(mapSettings.data[i].timestamp);
                 var hour = dataD.getHours();
@@ -778,7 +769,7 @@ var Calculations =
                 console.log(hour + ":" + minutes + ":" + seconds);
                 $scope.labels.push(hour + ":" + minutes + ":" + seconds);
                 if (mapSettings.data[i + percent] != null) {
-
+//calculate time so minutes hours seconds
                     var date2 = new Date(mapSettings.data[i + percent].timestamp);
 
                     var timeDiff = dataD.getTime() - date2.getTime();
@@ -794,14 +785,14 @@ var Calculations =
 
                     var secondsDifference = Math.floor(timeDiff / 1000);
 
-
+//calculate all distance between two points
                     var distance = Map.gps_distance(
                         mapSettings.data[i].coords.latitude,
                         mapSettings.data[i].coords.longitude,
                         mapSettings.data[i + percent].coords.latitude,
                         mapSettings.data[i + percent].coords.longitude);
                     distance *= 1000; //zamiana na metry
-
+//calculatte speed between two points
                     var speed = distance / secondsDifference;
                     $scope.data[0][i] = speed; //predkosc
                     console.log("speed :" + speed);
@@ -814,27 +805,22 @@ var Calculations =
 
         };
     };
-    var MetronomeController = function($scope,$timeout)
-    {
+    var MetronomeController = function ($scope, $timeout) {
 
-        $scope.isPlaying=false;
-
-
-        $scope.playMusic = function()
-         {
-
-             navigator.notification.vibrate(100);
-                 $scope.timer=$timeout($scope.playMusic,Audi.BPM);
+        $scope.isPlaying = false;
 
 
-         }
-        $scope.stopMusic = function()
-        {
+        $scope.playMusic = function () {
+
+            navigator.notification.vibrate(100);
+            $scope.timer = $timeout($scope.playMusic, Audi.BPM);
+
+
+        }
+        $scope.stopMusic = function () {
 
             $timeout.cancel($scope.timer);
         }
-
-
 
 
     };
@@ -845,8 +831,6 @@ var Calculations =
     app.controller('SettingsController', SettingsController);
     app.controller('MapController', MapController);
     app.controller('SlidingMenuController', SlidingMenuController);
-
-
 
 
 })
