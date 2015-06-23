@@ -10,16 +10,16 @@
         </ons-toolbar>
 
         <div id="map_canvas"></div>
-        <p id="trackingStatus" class="center_text">Workout Stoped</p>
+        <div style="text-align: center">
+            <p id="trackingStatus" class="center_text">Workout Stoped</p>
 
+            <p id="points" class="center_text">Points : 0</p>
+        </div>
         <div style="text-align: center">
             <canvas id="clock" class="circle_canvas"></canvas>
             <canvas id="track_info_info" class="circle_canvas">Tracking info</canvas>
-
-
-
         </div>
-        <p id="points" class="center_text">Points : 0</p>
+
         <br>
 
         <p class="par-buttons">
@@ -36,25 +36,25 @@
                 Show Question
             </ons-button>
 
-            <ons-button id="btn-showStats" ng-click="clickedStats()">
+            <ons-button id="btn-showStats" ng-click="clickedStats()" ng-hide="checkToShow()">
                 Show Stats
             </ons-button>
             <br><br>
-            <div ng-controller="MetronomeController">
-            <ons-button  id="btn-playMusic" ng-click="playMusic()">
-                Play music
-            </ons-button>
-            <ons-button  id="btn-stopMusic" ng-click="stopMusic()">
-            Stop music
-             </ons-button>
+            <!--<div ng-controller="MetronomeController">-->
+            <!--<ons-button  id="btn-playMusic" ng-click="playMusic()">-->
+            <!--Play music-->
+            <!--</ons-button>-->
+            <!--<ons-button  id="btn-stopMusic" ng-click="stopMusic()">-->
+            <!--Stop music-->
+            <!--</ons-button>-->
 
-    </div>
+            <!--</div>-->
 
         </p>
         <!--<div style="width: 100%; overflow: hidden;">-->
 
-            <!--<div id="audiAnimID"></div>-->
-            <!--<div id="pacmanAnimID"></div>-->
+        <!--<div id="audiAnimID"></div>-->
+        <!--<div id="pacmanAnimID"></div>-->
 
         <!--</div>-->
 

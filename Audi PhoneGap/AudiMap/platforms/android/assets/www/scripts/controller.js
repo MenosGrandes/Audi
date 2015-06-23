@@ -82,7 +82,9 @@ var Map = {
 
 };
 var Question = {
-    points: 0
+    points: 0,
+    clockTimer: 0,
+    time: 10
 };
 var Animations = {
     set_translate: function (e, pixX, pixY, time) {
@@ -285,8 +287,10 @@ var Calculations =
         }
         //man
         else {
-            console.log("hw "+HumanSizes.weight +" h h " +HumanSizes.height + " ha "+ HumanSizes.age);
-            console.log("met "+met);
+            console.log("hw " + HumanSizes.weight + " h h " + HumanSizes.height + " ha " + HumanSizes.age);
+            console.log("met " + met);
+            console.log("time " + time);
+
             bmr = (13.75 * HumanSizes.weight) + (5 * HumanSizes.height) - (6.76 * HumanSizes.age) + 665;
         }
         return ((bmr / 24) * met * time)
@@ -349,7 +353,7 @@ var Calculations =
     var MapController = function ($scope, $timeout, theService, ngDialog, $http, mapSettings) {
 
         $scope.stateOfWorkout = -1;
-
+        $scope.dialog = null;
 
         var tick = function () {
             Clock.calculateTimeDiff(2);  // get the current time
@@ -374,7 +378,18 @@ var Calculations =
         });
 
         // Start the timer
+        var questionTick = function () {
 
+            Question.clockTimer = $timeout(questionTick, 1000); // reset the timer
+            document.getElementById("timer").innerHTML = String(Question.time);
+            Question.time--;
+            if (Question.time <= 0) {
+                Question.points -= 1;
+                $scope.dialog.close();
+            }
+
+
+        }
 
         $scope.openNotify = function () {
 
@@ -395,21 +410,25 @@ var Calculations =
                 $scope.B = String(data[x].b);
                 $scope.C = String(data[x].c);
                 $scope.ans = String(data[x].odp);
+                questionTick();
 
 
             });
 
-            var dialog = ngDialog.open({
+            $scope.dialog = ngDialog.open({
                 template: 'question.html',
                 className: 'ngdialog-theme-plain',
                 scope: $scope
             });
 
-            dialog.closePromise.then(function (data) {
+            $scope.dialog.closePromise.then(function (data) {
 
                 document.getElementById("points").innerHTML = String("Points :"
                     + Question.points);
                 $scope.isAns = true;
+                $timeout.cancel(Question.clockTimer);
+                Question.time = 10;
+
             });
 
             $scope.btnClicked = function (btn) {
@@ -439,7 +458,7 @@ var Calculations =
                     }
                     $scope.isAns = false;
 
-                    $timeout(dialog.close, 2000);
+                    $timeout($scope.dialog.close, 2000);
                 }
             };
 
@@ -470,7 +489,7 @@ var Calculations =
                     + today.toDateString() + "</strong>");
             }
 
-            console.log("checkService id");
+
             if (theService.msg.id != 0) {
 
 
@@ -489,8 +508,8 @@ var Calculations =
                 // Google Map options
 
                 // Create the Google Map, set options
-                console.log("before map");
-                if (Map.map === null) {
+
+
                     var myOptions = {
                         zoom: 15,
                         center: myLatLng,
@@ -498,7 +517,7 @@ var Calculations =
                     };
                     Map.map = new google.maps.Map(document
                         .getElementById("map_canvas"), myOptions);
-                }
+
                 var trackCoords = [];
 
                 // Add each GPS entry to an array
@@ -611,6 +630,18 @@ var Calculations =
         $scope.clickedStats = function (event) {
             slidingMenu.setMainPage('mapStats.html');
         };
+        $scope.checkToShow=function()
+        {
+            if(WORKOUT_STATE.STARTED)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+
+        }
 
     };
 
@@ -746,7 +777,7 @@ var Calculations =
             timeDiff2 -= hoursDifference2 * 1000 * 60 * 60
 
             //calculate calories
-            var calories = Calculations.calculateBMR(hoursDifference2,Map.total_km/hoursDifference2);
+            var calories = Calculations.calculateBMR(hoursDifference2, Map.total_km / hoursDifference2);
             document.getElementById("burnedCalories").innerHTML = String("Burned calories :" + calories);
 
             $scope.labels = [];
@@ -803,27 +834,49 @@ var Calculations =
 
         };
     };
-    var MetronomeController = function ($scope, $timeout) {
+    /* var MetronomeController = function ($scope, $timeout) {
 
-        $scope.isPlaying = false;
+     $scope.isPlaying = false;
+     $scope.media = null;
+     $scope.getPhoneGapPath= function() {
+
+     var path = window.location.pathname;
+     path = path.substr( path, path.length - 10 );
+     return 'file://' + path;
+
+     };
+     $scope.playMusic = function () {
+     if($scope.media!=null)
+     {
+     try{
+     $scope.media = new Media($scope.getPhoneGapPath()+"/sounds/4d.wav",null,$scope.musiError)
+     }
+     catch(err)
+     {
+     console.log(err.toString());
+     }
+     }
+     $scope.timer = $timeout($scope.playMusic, Audi.BPM);
+     $scope.media.play();
 
 
-        $scope.playMusic = function () {
+     }
+     $scope.stopMusic = function () {
 
-            navigator.notification.vibrate(100);
-            $scope.timer = $timeout($scope.playMusic, Audi.BPM);
-
-
-        }
-        $scope.stopMusic = function () {
-
-            $timeout.cancel($scope.timer);
-        }
+     $timeout.cancel($scope.timer);
+     }
+     $scope.musiError = function(error)
+     {
+     console.log("nie diała");
+     }
 
 
-    };
+     };
+
+     app.controller('MetronomeController', MetronomeController);
+     */
     app.controller('HumanSizeWatcher', HumanSizeWatcher);
-    app.controller('MetronomeController', MetronomeController);
+
     app.controller('MapStatsController', MapStatsController);
     app.controller('HistoryController', HistoryController);
     app.controller('SettingsController', SettingsController);
