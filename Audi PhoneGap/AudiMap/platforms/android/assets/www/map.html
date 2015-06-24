@@ -23,10 +23,10 @@
         <br>
 
         <p class="par-buttons">
-            <ons-button id="btn-startWorkout" ng-click="startWorkout($event)">
+            <ons-button id="btn-startWorkout" ng-click="startWorkout($event)"ng-attr-disabled="{{startDisabled}}">
                 Start Workout
             </ons-button>
-            <ons-button id="btn-stopWorkout" ng-click="stopWorkout($event)">
+            <ons-button id="btn-stopWorkout" ng-click="stopWorkout($event)" ng-attr-disabled="{{stopDisabled}}">
                 Stop Workout
             </ons-button>
             <br>
@@ -36,7 +36,7 @@
                 Show Question
             </ons-button>
 
-            <ons-button id="btn-showStats" ng-click="clickedStats()" ng-hide="checkToShow()">
+            <ons-button id="btn-showStats" ng-click="clickedStats()" ng-attr-disabled="{{statsDisabled}}">
                 Show Stats
             </ons-button>
             <br><br>

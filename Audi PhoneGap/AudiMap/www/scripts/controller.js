@@ -23,7 +23,7 @@ var Map = {
     },
     calculateTotalKmFromMap: function () {
         if (document.getElementById("track_info_info") != null) {
-
+            Map.tracking_status = 0;
             Map.total_km = 0;
 
             for (var i = 0; i < Map.tracking_data.length; i++) {
@@ -48,7 +48,7 @@ var Map = {
         // position.coords;
         if (document.getElementById("track_info_info") != null) {
             var total_km = 0;
-
+            Map.tracking_status = 0;
             for (var i = 0; i < data.length; i++) {
 
                 if (i == (data.length - 1)) {
@@ -74,7 +74,7 @@ var Map = {
 
             var total_km_rounded = Map.total_km.toFixed(2);
             Map.tracking_status = total_km_rounded;
-            Clock.clocker(total_km_rounded, "track_info_info");
+            Clock.clocker(Map.tracking_status, "track_info_info");
             Clock.clocker(String("0:" + final_time_m + ":" + final_time_s), "clock");
 
         }
@@ -287,9 +287,9 @@ var Calculations =
         }
         //man
         else {
-            console.log("hw " + HumanSizes.weight + " h h " + HumanSizes.height + " ha " + HumanSizes.age);
-            console.log("met " + met);
-            console.log("time " + time);
+           // console.log("hw " + HumanSizes.weight + " h h " + HumanSizes.height + " ha " + HumanSizes.age);
+            //console.log("met " + met);
+            //console.log("time " + time);
 
             bmr = (13.75 * HumanSizes.weight) + (5 * HumanSizes.height) - (6.76 * HumanSizes.age) + 665;
         }
@@ -351,7 +351,9 @@ var Calculations =
 
 
     var MapController = function ($scope, $timeout, theService, ngDialog, $http, mapSettings) {
-
+        $scope.statsDisabled = true;
+        $scope.startDisabled = false;
+        $scope.stopDisabled = true;
         $scope.stateOfWorkout = -1;
         $scope.dialog = null;
 
@@ -472,10 +474,12 @@ var Calculations =
         };
 
         $scope.refreshMap = function () {
-
-
+            // console.log(theService.msg.id);
+            $scope.statsDisabled = true;
+            $scope.startDisabled = false;
+            $scope.stopDisabled = true;
             Clock.clocker("0:0:0", "clock");
-            Clock.clocker(Map.tracking_status, "track_info_info");
+            Clock.clocker(0, "track_info_info");
 
 
             if (Map.track_id != null) {
@@ -490,11 +494,11 @@ var Calculations =
             }
 
 
-            if (theService.msg.id != 0) {
+            if (theService.msg.id != 0 ) {
 
-
-                //document.getElementById("audiAnimID").className = "";
-                //document.getElementById("pacmanAnimID").className = "";
+                $scope.startDisabled = true;
+                $scope.stopDisabled = true;
+                $scope.statsDisabled = false;
 
 
                 var data = window.localStorage.getItem(theService.msg);
@@ -510,13 +514,12 @@ var Calculations =
                 // Create the Google Map, set options
 
 
-                    var myOptions = {
-                        zoom: 15,
-                        center: myLatLng,
-                        mapTypeId: google.maps.MapTypeId.ROADMAP
-                    };
-                    Map.map = new google.maps.Map(document
-                        .getElementById("map_canvas"), myOptions);
+                var myOptions = {
+                    zoom: 15,
+                    center: myLatLng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                Map.map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
 
                 var trackCoords = [];
 
@@ -540,11 +543,18 @@ var Calculations =
                 mapSettings.data = data;
                 mapSettings.track_id = theService.msg;
 
+                //theService.msg = null;;
+            }
+            else
+            {
+                Map.map=null;
             }
         };
 
         $scope.startWorkout = function () {
 
+            $scope.startDisabled = true;
+            $scope.stopDisabled = false;
             $scope.stateOfWorkout = WORKOUT_STATE.STARTED;
             var today = new Date();
             Clock.startDate = today;
@@ -603,6 +613,10 @@ var Calculations =
         };
 
         $scope.stopWorkout = function () {
+
+            $scope.startDisabled = false;
+            $scope.stopDisabled = true;
+
             $scope.stateOfWorkout = WORKOUT_STATE.STOPPED;
 
             // Stop tracking the user
@@ -628,20 +642,10 @@ var Calculations =
 
 
         $scope.clickedStats = function (event) {
+
             slidingMenu.setMainPage('mapStats.html');
         };
-        $scope.checkToShow=function()
-        {
-            if(!$scope.stateOfWorkout==WORKOUT_STATE.STARTED)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
 
-        }
 
     };
 
@@ -763,42 +767,53 @@ var Calculations =
 
         $scope.refreshfStatistics = function () {
 
-            console.log("map length " + mapSettings.data[0].timestamp);
+
+            var counter=0;
+            //console.log("map length " + mapSettings.data[0].timestamp);
             //calculate time
             var start_time = new Date(mapSettings.data[0].timestamp).getTime();
             var end_time = new Date(mapSettings.data[mapSettings.data.length - 1].timestamp).getTime();
 
-            var timeDiff2 = start_time - end_time;
+            var difference = end_time - start_time;
+            var daysDifference = Math.floor(difference/1000/60/60/24);
+            difference -= daysDifference*1000*60*60*24
 
-            var daysDifference2 = Math.floor(timeDiff2 / 1000 / 60 / 60 / 24);
-            timeDiff2 -= daysDifference2 * 1000 * 60 * 60 * 24
+            var hoursDifference = Math.floor(difference/1000/60/60);
+            difference -= hoursDifference*1000*60*60
 
-            var hoursDifference2 = Math.floor(timeDiff2 / 1000 / 60 / 60);
-            timeDiff2 -= hoursDifference2 * 1000 * 60 * 60
+            var minutesDifference = Math.floor(difference/1000/60);
+            difference -= minutesDifference*1000*60
 
-            //calculate calories
-            var calories = Calculations.calculateBMR(hoursDifference2, Map.total_km / hoursDifference2);
-            document.getElementById("burnedCalories").innerHTML = String("Burned calories :" + calories);
+            var secondsDifference = Math.floor(difference/1000);
+           // console.log('difference = ' + daysDifference + ' day/s ' + hoursDifference + ' hour/s ' + minutesDifference + ' minute/s ' + secondsDifference + ' second/s ');
+
+            var Tdiff=parseFloat((hoursDifference*3600 + minutesDifference*60 + secondsDifference)/3600);
+            var calories = Calculations.calculateBMR(Tdiff, Map.total_km / Tdiff);
+            document.getElementById("burnedCalories").innerHTML = String("Burned calories :" + calories.toFixed(2));
 
             $scope.labels = [];
             $scope.series = [];
             $scope.data = [[1]];
 //calculate how much points will be in diagram
-            var percent = mapSettings.data.length / (mapSettings.data.length * 0.1);
+            var percent = Math.floor(mapSettings.data.length / 10);
+           // console.log(percent + " " + mapSettings.data.length);
 //add seres
             $scope.series.push(mapSettings.track_id);
 
             //add every point from data
-            for (var i = 0; i < mapSettings.data.length; i += percent) {
+            for (var i = 0; i <= mapSettings.data.length; i += percent) {
+
+                //console.log(i);
                 var dataD = new Date(mapSettings.data[i].timestamp);
                 var hour = dataD.getHours();
                 var minutes = dataD.getMinutes();
                 var seconds = dataD.getSeconds();
 
-                console.log(hour + ":" + minutes + ":" + seconds);
-                $scope.labels.push(hour + ":" + minutes + ":" + seconds);
+               // console.log(hour + ":" + minutes + ":" + seconds);
+
                 if (mapSettings.data[i + percent] != null) {
 //calculate time so minutes hours seconds
+                    $scope.labels.push(hour + ":" + minutes + ":" + seconds);
                     var date2 = new Date(mapSettings.data[i + percent].timestamp);
 
                     var timeDiff = dataD.getTime() - date2.getTime();
@@ -823,10 +838,11 @@ var Calculations =
                     distance *= 1000; //zamiana na metry
 //calculatte speed between two points
                     var speed = distance / secondsDifference;
-                    $scope.data[0][i] = speed; //predkosc
-                    console.log("speed :" + speed);
-                    console.log("distance :" + distance);
-                    console.log("secondsDifference :" + secondsDifference);
+                    $scope.data[0][counter] = speed.toFixed(2); //predkosc
+                    // console.log("speed :" + speed);
+                    //console.log("distance :" + distance);
+                    // console.log("secondsDifference :" + secondsDifference);
+                    counter ++;
                 }
 
 

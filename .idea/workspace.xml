@@ -2,232 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c716a92-4cfc-4bcb-99cb-0bf917735218" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/sounds/4c#.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/sounds/4d.wav" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\plugins\org.apache.cordova.file\www\DirectoryEntry.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\plugins\org.apache.cordova.file\www\DirectoryReader.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\plugins\org.apache.cordova.file\www\Entry.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\plugins\org.apache.cordova.file\www\File.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\plugins\org.apache.cordova.file\www\FileEntry.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\plugins\org.apache.cordova.file\www\FileError.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\plugins\org.apache.cordova.file\www\FileReader.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\plugins\org.apache.cordova.file\www\FileSystem.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\plugins\org.apache.cordova.file\www\FileUploadOptions.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\plugins\org.apache.cordova.file\www\FileUploadResult.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\plugins\org.apache.cordova.file\www\FileWriter.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\plugins\org.apache.cordova.file\www\Flags.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\plugins\org.apache.cordova.file\www\LocalFileSystem.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\plugins\org.apache.cordova.file\www\Metadata.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\plugins\org.apache.cordova.file\www\ProgressEvent.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\plugins\org.apache.cordova.file\www\android\FileSystem.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\plugins\org.apache.cordova.file\www\fileSystemPaths.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\plugins\org.apache.cordova.file\www\fileSystems-roots.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\plugins\org.apache.cordova.file\www\fileSystems.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\plugins\org.apache.cordova.file\www\requestFileSystem.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\plugins\org.apache.cordova.file\www\resolveLocalFileSystemURI.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\plugins\org.apache.cordova.media\www\Media.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\assets\www\plugins\org.apache.cordova.media\www\MediaError.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\src\org\apache\cordova\file\ContentFilesystem.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\src\org\apache\cordova\file\DirectoryManager.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\src\org\apache\cordova\file\EncodingException.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\src\org\apache\cordova\file\FileExistsException.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\src\org\apache\cordova\file\FileHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\src\org\apache\cordova\file\FileUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\src\org\apache\cordova\file\Filesystem.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\src\org\apache\cordova\file\InvalidModificationException.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\src\org\apache\cordova\file\LocalFilesystem.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\src\org\apache\cordova\file\LocalFilesystemURL.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\src\org\apache\cordova\file\NoModificationAllowedException.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\src\org\apache\cordova\file\TypeMismatchException.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\src\org\apache\cordova\media\AudioHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\src\org\apache\cordova\media\AudioPlayer.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\android\src\org\apache\cordova\media\FileHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\AudiMap\Plugins\org.apache.cordova.file\CDVAssetLibraryFilesystem.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\AudiMap\Plugins\org.apache.cordova.file\CDVAssetLibraryFilesystem.m" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\AudiMap\Plugins\org.apache.cordova.file\CDVFile.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\AudiMap\Plugins\org.apache.cordova.file\CDVFile.m" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\AudiMap\Plugins\org.apache.cordova.file\CDVLocalFilesystem.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\AudiMap\Plugins\org.apache.cordova.file\CDVLocalFilesystem.m" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\AudiMap\Plugins\org.apache.cordova.media\CDVSound.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\AudiMap\Plugins\org.apache.cordova.media\CDVSound.m" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\www\plugins\org.apache.cordova.file\www\DirectoryEntry.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\www\plugins\org.apache.cordova.file\www\DirectoryReader.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\www\plugins\org.apache.cordova.file\www\Entry.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\www\plugins\org.apache.cordova.file\www\File.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\www\plugins\org.apache.cordova.file\www\FileEntry.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\www\plugins\org.apache.cordova.file\www\FileError.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\www\plugins\org.apache.cordova.file\www\FileReader.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\www\plugins\org.apache.cordova.file\www\FileSystem.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\www\plugins\org.apache.cordova.file\www\FileUploadOptions.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\www\plugins\org.apache.cordova.file\www\FileUploadResult.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\www\plugins\org.apache.cordova.file\www\FileWriter.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\www\plugins\org.apache.cordova.file\www\Flags.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\www\plugins\org.apache.cordova.file\www\LocalFileSystem.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\www\plugins\org.apache.cordova.file\www\Metadata.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\www\plugins\org.apache.cordova.file\www\ProgressEvent.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\www\plugins\org.apache.cordova.file\www\fileSystemPaths.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\www\plugins\org.apache.cordova.file\www\fileSystems-roots.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\www\plugins\org.apache.cordova.file\www\fileSystems.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\www\plugins\org.apache.cordova.file\www\ios\FileSystem.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\www\plugins\org.apache.cordova.file\www\requestFileSystem.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\www\plugins\org.apache.cordova.file\www\resolveLocalFileSystemURI.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\www\plugins\org.apache.cordova.media\www\Media.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\platforms\ios\www\plugins\org.apache.cordova.media\www\MediaError.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\NOTICE" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\RELEASENOTES.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\doc\de\index.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\doc\de\plugins.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\doc\es\index.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\doc\es\plugins.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\doc\fr\index.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\doc\fr\plugins.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\doc\index.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\doc\it\index.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\doc\it\plugins.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\doc\ja\index.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\doc\ja\plugins.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\doc\ko\index.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\doc\ko\plugins.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\doc\pl\index.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\doc\pl\plugins.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\doc\plugins.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\doc\ru\index.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\doc\ru\plugins.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\doc\zh\index.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\doc\zh\plugins.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\android\ContentFilesystem.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\android\DirectoryManager.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\android\EncodingException.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\android\FileExistsException.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\android\FileHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\android\FileUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\android\Filesystem.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\android\InvalidModificationException.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\android\LocalFilesystem.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\android\LocalFilesystemURL.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\android\NoModificationAllowedException.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\android\TypeMismatchException.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\blackberry10\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\firefoxos\FileProxy.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\ios\CDVAssetLibraryFilesystem.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\ios\CDVAssetLibraryFilesystem.m" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\ios\CDVFile.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\ios\CDVFile.m" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\ios\CDVLocalFilesystem.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\ios\CDVLocalFilesystem.m" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\ubuntu\file.cpp" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\ubuntu\file.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\windows\FileProxy.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\src\wp\File.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\tests\plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\tests\tests.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\DirectoryEntry.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\DirectoryReader.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\Entry.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\File.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\FileEntry.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\FileError.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\FileReader.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\FileSystem.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\FileUploadOptions.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\FileUploadResult.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\FileWriter.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\Flags.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\LocalFileSystem.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\Metadata.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\ProgressEvent.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\android\FileSystem.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\FileProxy.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\FileSystem.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\copyTo.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\createEntryFromNative.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\getDirectory.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\getFile.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\getFileMetadata.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\getMetadata.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\getParent.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\info.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\moveTo.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\readAsArrayBuffer.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\readAsBinaryString.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\readAsDataURL.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\readAsText.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\readEntries.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\remove.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\removeRecursively.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\requestAllFileSystems.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\requestAnimationFrame.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\requestFileSystem.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\resolveLocalFileSystemURI.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\setMetadata.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\truncate.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\blackberry10\write.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\fileSystemPaths.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\fileSystems-roots.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\fileSystems.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\firefoxos\FileSystem.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\ios\FileSystem.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\requestFileSystem.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\resolveLocalFileSystemURI.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\ubuntu\FileSystem.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\ubuntu\FileWriter.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\ubuntu\fileSystems-roots.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.file\www\wp\FileUploadOptions.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\NOTICE" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\RELEASENOTES.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\doc\de\index.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\doc\es\index.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\doc\fr\index.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\doc\index.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\doc\it\index.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\doc\ja\index.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\doc\ko\index.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\doc\pl\index.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\doc\ru\index.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\doc\zh\index.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\package.json" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\src\android\AudioHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\src\android\AudioPlayer.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\src\android\FileHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\src\blackberry10\index.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\src\ios\CDVSound.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\src\ios\CDVSound.m" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\src\tizen\MediaProxy.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\src\ubuntu\media.cpp" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\src\ubuntu\media.h" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\src\windows8\MediaProxy.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\src\wp\AudioPlayer.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\src\wp\Media.cs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\tests\plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\tests\tests.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\www\Media.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Filip\Git\Audi\Audi PhoneGap\AudiMap\plugins\org.apache.cordova.media\www\MediaError.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/AndroidManifest.xml" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/plugins/android.json" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/plugins/android.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/res/xml/config.xml" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/res/xml/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/AudiMap/config.xml" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/AudiMap/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/scripts/controller.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/scripts/controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/controller.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/cordova_plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/cordova_plugins.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/www/cordova_plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/plugins/fetch.json" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/plugins/fetch.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/js/index.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/js/index.js" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/plugins/ios.json" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/plugins/ios.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/map.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/map.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/map.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/map.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/AudiMap.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/ios/AudiMap.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/question.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/platforms/android/assets/www/question.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/question.html" afterPath="$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/question.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Audi.iws" />
@@ -252,22 +30,19 @@
       <file leaf-file-name="controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18771331">
-              <caret line="627" column="0" selection-start-line="627" selection-start-column="0" selection-end-line="627" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7389079">
+              <caret line="840" column="61" selection-start-line="840" selection-start-column="61" selection-end-line="840" selection-end-column="61" />
               <folding>
-                <element signature="e#3029#3528#0" expanded="false" />
-                <element signature="e#3530#4424#0" expanded="false" />
-                <element signature="e#4520#4554#0" expanded="false" />
-                <element signature="e#4573#4641#0" expanded="false" />
-                <element signature="e#4655#6165#0" expanded="false" />
-                <element signature="e#6212#6455#0" expanded="false" />
-                <element signature="e#6475#9642#0" expanded="false" />
-                <element signature="e#12128#12463#0" expanded="false" />
-                <element signature="e#12505#15259#0" expanded="false" />
-                <element signature="e#15300#15402#0" expanded="false" />
-                <element signature="e#17800#19325#0" expanded="false" />
-                <element signature="e#19364#19862#0" expanded="false" />
-                <element signature="e#19906#20647#0" expanded="false" />
+                <element signature="e#842#1648#0" expanded="false" />
+                <element signature="e#1696#3015#0" expanded="false" />
+                <element signature="e#3104#3603#0" expanded="false" />
+                <element signature="e#3605#4499#0" expanded="false" />
+                <element signature="e#4595#4629#0" expanded="false" />
+                <element signature="e#4648#4716#0" expanded="false" />
+                <element signature="e#4730#6240#0" expanded="false" />
+                <element signature="e#12319#12654#0" expanded="false" />
+                <element signature="e#12696#15450#0" expanded="false" />
+                <element signature="e#15491#15593#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -302,8 +77,8 @@
       <file leaf-file-name="map.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.038462">
-              <caret line="38" column="93" selection-start-line="38" selection-start-column="93" selection-end-line="38" selection-end-column="93" />
+            <state vertical-scroll-proportion="-3.6153846">
+              <caret line="28" column="100" selection-start-line="28" selection-start-column="100" selection-end-line="28" selection-end-column="100" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#ons-page#0;n#ons-navigator#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#ons-page#0;n#ons-navigator#0;n#!!top" expanded="true" />
@@ -315,7 +90,7 @@
       <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
               <folding />
             </state>
@@ -325,7 +100,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-13.423077">
               <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
               <folding />
             </state>
@@ -534,8 +309,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -671,7 +446,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="748" extended-state="6" />
+    <frame x="-4" y="-4" width="1374" height="748" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2569546" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -717,7 +492,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/controller.js</url>
+          <line>46</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -756,19 +538,16 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="149" column="0" selection-start-line="149" selection-start-column="0" selection-end-line="149" selection-end-column="0" />
           <folding>
-            <element signature="e#3029#3528#0" expanded="false" />
-            <element signature="e#3530#4424#0" expanded="false" />
-            <element signature="e#4520#4554#0" expanded="false" />
-            <element signature="e#4573#4641#0" expanded="false" />
-            <element signature="e#4655#6165#0" expanded="false" />
-            <element signature="e#6212#6455#0" expanded="false" />
-            <element signature="e#6475#9642#0" expanded="false" />
-            <element signature="e#12128#12463#0" expanded="false" />
-            <element signature="e#12505#15259#0" expanded="false" />
-            <element signature="e#15300#15402#0" expanded="false" />
-            <element signature="e#17800#19325#0" expanded="false" />
-            <element signature="e#19364#19862#0" expanded="false" />
-            <element signature="e#19906#20647#0" expanded="false" />
+            <element signature="e#842#1648#0" expanded="false" />
+            <element signature="e#1696#3015#0" expanded="false" />
+            <element signature="e#3104#3603#0" expanded="false" />
+            <element signature="e#3605#4499#0" expanded="false" />
+            <element signature="e#4595#4629#0" expanded="false" />
+            <element signature="e#4648#4716#0" expanded="false" />
+            <element signature="e#4730#6240#0" expanded="false" />
+            <element signature="e#12319#12654#0" expanded="false" />
+            <element signature="e#12696#15450#0" expanded="false" />
+            <element signature="e#15491#15593#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1035,14 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/common.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33278957">
@@ -1055,6 +826,13 @@
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.029363785">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1072,16 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.029363785">
-          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/mapStats.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.65384614">
@@ -1090,10 +858,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.423077">
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/map.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.038462">
-          <caret line="38" column="93" selection-start-line="38" selection-start-column="93" selection-end-line="38" selection-end-column="93" />
+        <state vertical-scroll-proportion="-3.6153846">
+          <caret line="28" column="100" selection-start-line="28" selection-start-column="100" selection-end-line="28" selection-end-column="100" />
           <folding>
             <element signature="n#style#0;n#div#1;n#ons-page#0;n#ons-navigator#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#ons-page#0;n#ons-navigator#0;n#!!top" expanded="true" />
@@ -1103,22 +879,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Audi PhoneGap/AudiMap/www/scripts/controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18771331">
-          <caret line="627" column="0" selection-start-line="627" selection-start-column="0" selection-end-line="627" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.7389079">
+          <caret line="840" column="61" selection-start-line="840" selection-start-column="61" selection-end-line="840" selection-end-column="61" />
           <folding>
-            <element signature="e#3029#3528#0" expanded="false" />
-            <element signature="e#3530#4424#0" expanded="false" />
-            <element signature="e#4520#4554#0" expanded="false" />
-            <element signature="e#4573#4641#0" expanded="false" />
-            <element signature="e#4655#6165#0" expanded="false" />
-            <element signature="e#6212#6455#0" expanded="false" />
-            <element signature="e#6475#9642#0" expanded="false" />
-            <element signature="e#12128#12463#0" expanded="false" />
-            <element signature="e#12505#15259#0" expanded="false" />
-            <element signature="e#15300#15402#0" expanded="false" />
-            <element signature="e#17800#19325#0" expanded="false" />
-            <element signature="e#19364#19862#0" expanded="false" />
-            <element signature="e#19906#20647#0" expanded="false" />
+            <element signature="e#842#1648#0" expanded="false" />
+            <element signature="e#1696#3015#0" expanded="false" />
+            <element signature="e#3104#3603#0" expanded="false" />
+            <element signature="e#3605#4499#0" expanded="false" />
+            <element signature="e#4595#4629#0" expanded="false" />
+            <element signature="e#4648#4716#0" expanded="false" />
+            <element signature="e#4730#6240#0" expanded="false" />
+            <element signature="e#12319#12654#0" expanded="false" />
+            <element signature="e#12696#15450#0" expanded="false" />
+            <element signature="e#15491#15593#0" expanded="false" />
           </folding>
         </state>
       </provider>
